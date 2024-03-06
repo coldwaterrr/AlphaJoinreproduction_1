@@ -1,22 +1,24 @@
 import os
 from getResource import getResource
 
-querydir = '../resource/jobquery'   
-tablenamedir = '../resource/jobtablename'    
-shorttolongpath = '../resource/shorttolong'  
-predicatesEncodeDictpath = './predicatesEncodedDict'   
-queryEncodeDictpath = './queryEncodedDict'  
+querydir = '../resource/jobquery'  # imdb的查询语句
+tablenamedir = '../resource/jobtablename'  # 每条语句对应表名的别名(缩写)
+shorttolongpath = '../resource/shorttolong'  # 缩写与全名的映射
+predicatesEncodeDictpath = './predicatesEncodedDict'
+queryEncodeDictpath = './queryEncodedDict'
+
 
 # Get all the attributes used to select the filter vector
+# 获取用于选择滤波器向量的所有属性
 def getQueryAttributions():
     fileList = os.listdir(querydir)
     fileList.sort()
-    attr = set()
+    attr = set()  # 创建一个无序不重复的元素集
 
     for queryName in fileList:
         querypath = querydir + "/" + queryName
         file_object = open(querypath)
-        file_context = file_object.readlines()
+        file_context = file_object.readlines()  # 获取query语句
         file_object.close()
 
         # find WHERE
@@ -27,15 +29,16 @@ def getQueryAttributions():
                 break
 
         # handle a sentence after WHERE
+        # 处理 WHERE 后的句子
         for i in range(k, len(file_context)):
-            temp = file_context[i].split()
+            temp = file_context[i].split()  # 默认空格分隔
             for word in temp:
                 if '.' in word:
                     if word[0] == "'":
                         continue
                     if word[0] == '(':
-                        word = word[1:]
-                    if word[-1] == ';':
+                        word = word[1:]  # object[start:end:step]   object[:]表示从头取到尾，步长默认为1  object[::]一样表示从头到尾，步长为1
+                    if word[-1] == ';':  # object[:5]没有Start表示从头开始取,步长为1，object[5:]表示从5开始到尾，步长为1
                         word = word[:-1]
                     attr.add(word)
 
@@ -43,9 +46,10 @@ def getQueryAttributions():
     attrNames.sort()
     return attrNames
 
-def getQueryEncode(attrNames):
 
+def getQueryEncode(attrNames):
     # Read all table abbreviations
+    # 读取所有表格缩写
     f = open(shorttolongpath, 'r')
     a = f.read()  # 读取文件的整个内容,返回的是字符串
     short_to_long = eval(a)  # 的功能是去掉参数最外侧引号，变成python可执行的语句，并执行语句的函数。
@@ -57,6 +61,7 @@ def getQueryEncode(attrNames):
     tableNames.sort()
 
     # Mapping of table name abbreviations and numbers (list subscripts)
+    # 表名缩写和编号（列表下标）的映射
     table_to_int = {}
     int_to_table = {}
     for i in range(len(tableNames)):
@@ -64,13 +69,13 @@ def getQueryEncode(attrNames):
         table_to_int[tableNames[i]] = i
 
     # Mapping of attributes and numbers (list subscripts)
+    # 属性和编号（列表下标）的映射
     attr_to_int = {}
     int_to_attr = {}
     for i in range(len(attrNames)):
         int_to_attr[i] = attrNames[i]
         attr_to_int[attrNames[i]] = i
     # print(table_to_int)
-
 
     queryEncodeDict = {}
     joinEncodeDict = {}
@@ -79,10 +84,11 @@ def getQueryEncode(attrNames):
     fileList.sort()
 
     for queryName in fileList:
-        joinEncode = [0 for _ in range(len(tableNames)*len(tableNames))]
+        joinEncode = [0 for _ in range(len(tableNames) * len(tableNames))]
         predicatesEncode = [0 for _ in range(len(attrNames))]
 
         # Read query statement
+        # 读取查询语句
         querypath = querydir + "/" + queryName
         file_object = open(querypath)
         file_context = file_object.readlines()
@@ -155,7 +161,3 @@ if __name__ == '__main__':
     getResource()
     attrNames = getQueryAttributions()
     getQueryEncode(attrNames)
-
-
-
-

@@ -61,7 +61,13 @@ def getResource():
 
         # print(file_context)
 
+        # 获取查询计划
+        cur.execute("explain " + file_context)
+        rows = cur.fetchall()  # 获取得到的所有结果
+        # print(row)
+
         scan_language = []
+
         for line in rows:
             if line[0].find('Scan') != -1 & line[0].find('Bitmap Index') == -1:
                 scan_language.append(line[0])
