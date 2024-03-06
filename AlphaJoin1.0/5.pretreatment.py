@@ -9,6 +9,6 @@ if __name__ == '__main__':
     trainer = supervised(args)
     print("Pretreatment running...")
     start = time.clock()
-    trainer.pretreatment("./data/XXX.sql")
+    trainer.pretreatment("./data/xxx.sql")
     elapsed = (time.clock() - start)
     print("Pretreatment time used:", elapsed)

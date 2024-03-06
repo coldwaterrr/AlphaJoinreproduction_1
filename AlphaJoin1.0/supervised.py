@@ -19,13 +19,16 @@ class data:
 
 class supervised:
     def __init__(self, args): 
-        # Read dict predicatesEncoded 
+        # Read dict predicatesEncoded
+        # 读取谓词预测编码
         f = open(predicatesEncodeDictPath, 'r')
         a = f.read()
         self.predicatesEncodeDict = eval(a)
+        print(self.predicatesEncodeDict)
         f.close()
 
         # Read all tablenames and get tablename-number mapping
+        # 读取所有表名并获取表名-编号映射
         tables = []
         f = open(shortToLongPath, 'r')
         a = f.read()
@@ -39,8 +42,10 @@ class supervised:
             self.table_to_int[tables[i]] = i
         
         # The dimension of the network input vector
+        # 网络输入向量的维度
         self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])
         # The dimension of the vector output by the network
+        # 网络输出向量的维度
         self.num_output = 5    
         self.args = args
         self.right = 0
@@ -83,6 +88,7 @@ class supervised:
     # Divide training set and test set
     def pretreatment(self, path):
         # Load data uniformly and randomly select for training
+        # 统一加载数据并随机选择进行训练
         file_test = open(path)
         line = file_test.readline()
         while line:
@@ -94,7 +100,7 @@ class supervised:
             state = state + predicatesEncode
             runtime = line.split(",")[2].strip()
             if runtime == 'timeout':  
-                runtime = ??  # Depends on your settings
+                runtime = 'timeout'  # Depends on your settings
             else:
                 runtime = int(float(runtime))
             temp = data(state, runtime)
@@ -126,6 +132,7 @@ class supervised:
         file_train.close()
 
     # functions to train the network
+    # 训练网络的方法
     def supervised(self):
         self.load_data()
         optim = torch.optim.SGD(self.value_net.parameters(), lr=0.01)
@@ -163,6 +170,7 @@ class supervised:
                 self.test_network()
 
     # functions to test the network
+    # 测试网络的方法
     def test_network(self):
         self.load_data()
         model_path = self.args.save_dir + 'supervised.pt'
