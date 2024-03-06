@@ -59,8 +59,6 @@ def getResource():
         file_context = file_object.read()
         file_object.close()
 
-        # print(file_context)
-
         scan_language = []
         for line in rows:
             if line[0].find('Scan') != -1 & line[0].find('Bitmap Index') == -1:
