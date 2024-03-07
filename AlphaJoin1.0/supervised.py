@@ -18,7 +18,7 @@ class data:
 
 
 class supervised:
-    def __init__(self, args): 
+    def __init__(self, args):
         # Read dict predicatesEncoded
         # 读取谓词预测编码
         f = open(predicatesEncodeDictPath, 'r')
@@ -40,13 +40,13 @@ class supervised:
         self.table_to_int = {}
         for i in range(len(tables)):
             self.table_to_int[tables[i]] = i
-        
+
         # The dimension of the network input vector
         # 网络输入向量的维度
         self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])
         # The dimension of the vector output by the network
         # 网络输出向量的维度
-        self.num_output = 5    
+        self.num_output = 5
         self.args = args
         self.right = 0
 
@@ -58,11 +58,10 @@ class supervised:
 
         self.dataList = []
         self.testList = []
-    
 
     # Parsing query plan
-    # 解析查询计划
-    def hint2matrix(self, hint):        
+    # 解析查询计划,计划编码的过程,最后得到论文中图一右边的图
+    def hint2matrix(self, hint):  # ( ( ( ( ( mc ( ci rt ) ) cn ) t ) chn ) ct )
         tablesInQuery = hint.split(" ")
         matrix = np.mat(np.zeros((len(self.table_to_int), len(self.table_to_int))))
         stack = []
@@ -93,14 +92,14 @@ class supervised:
         file_test = open(path)
         line = file_test.readline()
         while line:
-            queryName = line.split(",")[0].encode('utf-8').decode('utf-8-sig').strip()
+            queryName = line.split(",")[0].encode('utf-8').decode('utf-8-sig').strip()  # strip默认去头尾多余空格
             hint = line.split(",")[1]
             matrix = self.hint2matrix(hint)
             predicatesEncode = self.predicatesEncodeDict[queryName]
             state = matrix.flatten().tolist()[0]
             state = state + predicatesEncode
             runtime = line.split(",")[2].strip()
-            if runtime == 'timeout':  
+            if runtime == 'timeout':
                 runtime = 'timeout'  # Depends on your settings
             else:
                 runtime = int(float(runtime))
@@ -149,7 +148,7 @@ class supervised:
             state_tensor = torch.tensor(state, dtype=torch.float32)
 
             predictionRuntime = torch.log(self.value_net(state_tensor) + 1e-10)
-            predictionRuntime = predictionRuntime.view(1,-1)
+            predictionRuntime = predictionRuntime.view(1, -1)
 
             label = []
             label.append(self.dataList[index].label)
@@ -157,9 +156,9 @@ class supervised:
 
             loss = loss_func(predictionRuntime, label_tensor)
 
-            optim.zero_grad() 
-            loss.backward() 
-            optim.step() 
+            optim.zero_grad()
+            loss.backward()
+            optim.step()
             loss1000 += loss.item()
             if step % 1000 == 0:
                 print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
@@ -187,10 +186,10 @@ class supervised:
             prediction = predictionRuntime.detach().cpu().numpy()
             maxindex = np.argmax(prediction)
             label = self.testList[step].label
-            #print(maxindex, "\t", label)
+            # print(maxindex, "\t", label)
             if maxindex == label:
                 correct += 1
-        print(correct, self.testList.__len__(), correct/self.testList.__len__(), end = ' ')
+        print(correct, self.testList.__len__(), correct / self.testList.__len__(), end=' ')
 
         correct1 = 0
         for step in range(self.dataList.__len__()):
@@ -202,10 +201,10 @@ class supervised:
             prediction = predictionRuntime.detach().cpu().numpy()
             maxindex = np.argmax(prediction)
             label = self.dataList[step].label
-            #print(maxindex, "\t", label)
+            # print(maxindex, "\t", label)
             if maxindex == label:
                 correct1 += 1
-        print(correct1, self.dataList.__len__(), correct1/self.dataList.__len__())
+        print(correct1, self.dataList.__len__(), correct1 / self.dataList.__len__())
         self.right = correct / self.testList.__len__()
 
     def load_data(self):
