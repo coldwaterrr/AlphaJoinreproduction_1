@@ -61,6 +61,7 @@ class supervised:
     
 
     # Parsing query plan
+    # 解析查询计划
     def hint2matrix(self, hint):        
         tablesInQuery = hint.split(" ")
         matrix = np.mat(np.zeros((len(self.table_to_int), len(self.table_to_int))))
@@ -119,7 +120,7 @@ class supervised:
         print("size of test set:", len(self.testList), "\tsize of train set:", len(self.dataList))
         testpath = "./data/testdata.sql"
         file_test = open(testpath, 'wb')
-        pickle.dump(len(self.testList), file_test)
+        pickle.dump(len(self.testList), file_test)  # 通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储
         for value in self.testList:
             pickle.dump(value, file_test)
         file_test.close()

@@ -64,15 +64,21 @@ def getResource():
         # 获取查询计划
         cur.execute("explain " + file_context)
         rows = cur.fetchall()  # 获取得到的所有结果
-        # print(row)
 
         scan_language = []
 
         for line in rows:
+            # print(line)
+            # print(line[0])
             if line[0].find('Scan') != -1 & line[0].find('Bitmap Index') == -1:
+                # print("yes\t"+line[0])
                 scan_language.append(line[0])
+            # else:
+            #     print("no\t"+line[0])
         for language in scan_language:
+            # print(language)
             word = language.split(' ')
+            # print(word)
             index = word.index('on')
             short_to_long[word[index + 2]] = word[index + 1]
 
