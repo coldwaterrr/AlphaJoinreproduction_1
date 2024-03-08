@@ -52,6 +52,9 @@ class supervised:
 
         # build up the network
         self.value_net = ValueNet(self.num_inputs, self.num_output)
+        self.actor_net = ValueNet(self.num_inputs, self.num_output)
+        if self.args.cuda:
+            self.actor_net.cuda()
         # check some dir
         if not os.path.exists(self.args.save_dir):
             os.mkdir(self.args.save_dir)
@@ -117,14 +120,14 @@ class supervised:
             self.testList.append(temp)
 
         print("size of test set:", len(self.testList), "\tsize of train set:", len(self.dataList))
-        testpath = "./data/testdata.sql"
+        testpath = "testdata.sql"
         file_test = open(testpath, 'wb')
         pickle.dump(len(self.testList), file_test)  # 通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储
         for value in self.testList:
             pickle.dump(value, file_test)
         file_test.close()
 
-        trainpath = "./data/traindata.sql"
+        trainpath = "traindata.sql"
         file_train = open(trainpath, 'wb')
         pickle.dump(len(self.dataList), file_train)
         for value in self.dataList:
@@ -132,7 +135,7 @@ class supervised:
         file_train.close()
 
     # functions to train the network
-    # 训练网络的方法
+    # 训练网络的函数
     def supervised(self):
         self.load_data()
         optim = torch.optim.SGD(self.value_net.parameters(), lr=0.01)
@@ -163,17 +166,18 @@ class supervised:
             if step % 1000 == 0:
                 print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
                 loss1000 = 0
-                self.test_network()
+                # self.test_network() ??
                 print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
             if step % 200000 == 0:
                 torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised.pt')
-                self.test_network()
+                # self.test_network()
 
     # functions to test the network
-    # 测试网络的方法
+    # 测试网络的函数
     def test_network(self):
         self.load_data()
         model_path = self.args.save_dir + 'supervised.pt'
+        # self.actor_net = self.value_net(self.num_inputs, self.num_output)
         self.actor_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
         self.actor_net.eval()
 
@@ -210,14 +214,14 @@ class supervised:
     def load_data(self):
         if self.dataList.__len__() != 0:
             return
-        testpath = "./data/testdata.sql"
+        testpath = "testdata.sql"
         file_test = open(testpath, 'rb')
         l = pickle.load(file_test)
         for _ in range(l):
             self.testList.append(pickle.load(file_test))
         file_test.close()
 
-        trainpath = "./data/traindata.sql"
+        trainpath = "traindata.sql"
         file_train = open(trainpath, 'rb')
         l = pickle.load(file_train)
         for _ in range(l):

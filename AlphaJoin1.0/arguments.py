@@ -7,7 +7,7 @@ def get_args():
     # 添加命令行参数
     parse.add_argument('--env-name', type=str, default='postgresql', help='the training environment')
     parse.add_argument('--save-dir', type=str, default='saved_models/', help='the folder that save the models')
-
+    parse.add_argument('--cuda', action='store_true', help='if use the GPU to do the training')
     # get args...
     # 从命令行中结构化解析参数
     args = parse.parse_args()
