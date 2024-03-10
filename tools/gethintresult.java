@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;  //java时间格式化
 import java.util.*;
 
 import static java.lang.Thread.sleep;
@@ -18,7 +18,7 @@ public class gethintresult {
     public static void main(String[] args) throws InterruptedException, IOException {
         SimpleDateFormat df = new SimpleDateFormat("MM-dd HH:mm:ss");
         FileReader fr = new FileReader(hintDir);
-        BufferedReader br = new BufferedReader(fr);
+        BufferedReader br = new BufferedReader(fr);  //BufferedReader 是一个缓冲字符输入流，该流可以对 FileRead 进行包装，提供一个缓存数组，一次将数据按照一定规则读取到缓存区中
         String line;
         while ((line = br.readLine()) != null) {
             String[] temp = line.split(",");

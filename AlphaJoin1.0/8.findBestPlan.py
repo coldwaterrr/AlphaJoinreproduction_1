@@ -23,6 +23,7 @@ f.close()
 
 
 # Get all tablenames
+# 获取所有表名
 tables = []
 f = open(shorttolongpath, 'r')
 a = f.read()
@@ -33,6 +34,7 @@ for i in short_to_long.keys():
 tables.sort()
 
 # Mapping of tablename abbreviations and numbers (list subscripts)
+# 表名缩写和编号（列表下标）的映射
 totalNumberOfTables = len(tables)
 tableToInt = {}
 intToTable = {}
@@ -59,7 +61,7 @@ class planState:
         return possibleActions
 
     def takeAction(self, action):
-        newState = deepcopy(self)
+        newState = deepcopy(self)  # 深拷贝
         newState.currentStep = self.currentStep - 1
         newState.board[action.x * self.tableNumber + action.y] = action.currentStep
         newState.joinMartix[action.x * self.tableNumber + action.y] = 0

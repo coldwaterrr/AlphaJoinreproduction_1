@@ -65,10 +65,12 @@ def getResource():
         cur.execute("explain " + file_context)
         rows = cur.fetchall()  # 获取得到的所有结果
 
+        # print(rows)
+
         scan_language = []
 
         for line in rows:
-            # print(line)
+            print(line)
             # print(line[0])
             if line[0].find('Scan') != -1 & line[0].find('Bitmap Index') == -1:
                 # print("yes\t"+line[0])
