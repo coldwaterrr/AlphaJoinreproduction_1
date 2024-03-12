@@ -49,6 +49,14 @@ class planState:
         self.currentStep = numberOfTables
         self.board = [0 for _ in range(self.tableNumber * self.tableNumber)]
         self.joinMartix = queryEncode[:self.tableNumber * self.tableNumber]
+        # for i in range(self.tableNumber):
+        #     print("\n")
+        #     for j in range(i, self.tableNumber):
+        #         if(self.joinMartix[i*self.tableNumber+j]!=1):
+        #             print(self.joinMartix[i*self.tableNumber+j], end=" ")
+        #         else:
+        #             print(intToTable[i], end="x")
+        #             print(intToTable[j], end=" ")
         self.predicatesEncode = predicatesEncode
 
 
@@ -135,6 +143,7 @@ def findBestPlan():
         file_object.close()
 
         # Construct the initial state
+        # 构建初始状态
         initialState = planState(totalNumberOfTables, len(tableList), queryEncodeDict[queryName],
                                 predicatesEncodeDict[queryName])
         currentState = initialState
