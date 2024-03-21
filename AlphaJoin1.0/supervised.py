@@ -113,7 +113,9 @@ class supervised:
         self.dataList.sort(key=lambda x: x.time, reverse=False)
         for i in range(self.dataList.__len__()):
             self.dataList[i].label = int(i / (self.dataList.__len__() / self.num_output + 1))
-            # print(self.dataList[i].label)
+            print(self.dataList[i].label)
+            print(self.dataList.__len__())
+            print(self.num_output)
         for i in range(int(self.dataList.__len__() * 0.3)):
             index = random.randint(0, len(self.dataList) - 1)
             temp = self.dataList.pop(index)
@@ -156,6 +158,7 @@ class supervised:
             label = []
             label.append(self.dataList[index].label)
             label_tensor = torch.tensor(label)
+            print(label_tensor)
 
             loss = loss_func(predictionRuntime, label_tensor)
 

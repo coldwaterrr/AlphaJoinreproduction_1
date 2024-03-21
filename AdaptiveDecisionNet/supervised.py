@@ -45,7 +45,10 @@ class supervised:
             self.table_to_int[tables[i]] = i
         
         # The dimension of the network input vector
-        self.num_inputs = len(tables) * len(tables) + len(self.queryEncodedDict["1a"])
+        # self.num_inputs = len(tables) * len(tables) + len(self.queryEncodedDict["1a"])
+        # print(len(self.queryEncodedDict["1a"]))
+        # print(self.num_inputs)
+        self.num_inputs = 856
         # The dimension of the vector output by the network
         self.num_output = 2  
         self.args = args
@@ -60,6 +63,7 @@ class supervised:
         self.datasetnumber = 4 
         self.trainList = []
         self.testList = []
+        self.dataList = []
 
     # Divide training set and test set
     def pretreatment(self, path):
@@ -68,24 +72,24 @@ class supervised:
         # Load data uniformly and randomly select for training
         file_test = open(path)
         line = file_test.readline()
-        dataList = []
+        # dataList = []
         while line:
             queryName = line.split(",")[0].encode('utf-8').decode('utf-8-sig').strip()
             state = self.queryEncodedDict[queryName]
             origintime = int(float(line.split(",")[1].strip()))
             qpopttime = int(float(line.split(",")[2].strip()))
-            label = int(line.split(",")[3].strip())
+            label = int(float(line.split(",")[3].strip()))
             temp = data(queryName, state, origintime, qpopttime, label)
-            dataList.append(temp)
+            self.dataList.append(temp)
             line = file_test.readline()
 
-        random.shuffle(dataList)
+        random.shuffle(self.dataList)
         listtemp = []
         for i in range(self.datasetnumber):
             temptemp = []
             listtemp.append(temptemp)
-        for i in range(dataList.__len__()):
-            listtemp[i % listtemp.__len__()].append(dataList[i])
+        for i in range(self.dataList.__len__()):
+            listtemp[i % listtemp.__len__()].append(self.dataList[i])
         for i in range(listtemp.__len__()):
             filepath = "./data/data" + str(i) + ".sql"
             file = open(filepath, 'wb')
@@ -93,7 +97,7 @@ class supervised:
             for value in listtemp[i]:
                 pickle.dump(value, file)
             file.close()
-
+        # print(len(self.dataList))
         elapsed = (time.clock() - start)
         print("Pretreatment time used:", elapsed)
 
@@ -109,19 +113,26 @@ class supervised:
         loss_func = torch.nn.NLLLoss()
         loss1000 = 0
         count = 0
-
         # starttime = datetime.now()
+        # print(len(self.trainList))
+        # print(self.dataList[0].state)
         for step in range(1, 300001):
             index = random.randint(0, len(self.trainList) - 1)
             state = self.trainList[index].state
             state_tensor = torch.tensor(state, dtype=torch.float32)
 
-            predictionRuntime = torch.log(self.value_net(state_tensor) + 1e-10)
-            predictionRuntime = predictionRuntime.view(1,-1)
+            predictionRuntime = torch.log(self.actor_net(state_tensor) + 1e-10)
+            predictionRuntime = predictionRuntime.view(1, -1)
             
             label = []
-            label.append(self.dataList[index].label)
+            label.append(self.trainList[index].label)
             label_tensor = torch.tensor(label)
+            # print(self.trainList[index].label)
+
+            # predictionRuntime = self.actor_net(state_tensor)
+            # label = [0 for _ in range(self.num_output)]
+            # label[self.trainList[index].label] = 1
+            # label_tensor = torch.tensor(label, dtype=torch.float32)
 
             loss = loss_func(predictionRuntime, label_tensor)
             optim.zero_grad()  
