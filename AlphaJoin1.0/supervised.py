@@ -24,7 +24,7 @@ class supervised:
         f = open(predicatesEncodeDictPath, 'r')
         a = f.read()
         self.predicatesEncodeDict = eval(a)
-        print(self.predicatesEncodeDict)
+        # print(self.predicatesEncodeDict)
         f.close()
 
         # Read all tablenames and get tablename-number mapping

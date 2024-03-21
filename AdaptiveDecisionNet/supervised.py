@@ -10,7 +10,8 @@ import pickle
 from models import ValueNet
 
 shortToLongPath = '../resource/shorttolong'
-queryEncodedDictPath = './queryEncodedDict'  
+queryEncodedDictPath = './queryEncodedDict'
+predicatesEncodeDictPath = './predicatesEncodedDict'
 
 
 class data:
@@ -44,7 +45,7 @@ class supervised:
             self.table_to_int[tables[i]] = i
         
         # The dimension of the network input vector
-        self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])
+        self.num_inputs = len(tables) * len(tables) + len(self.queryEncodedDict["1a"])
         # The dimension of the vector output by the network
         self.num_output = 2  
         self.args = args

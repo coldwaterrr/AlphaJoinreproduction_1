@@ -4,7 +4,7 @@ from supervised import supervised
 if __name__ == '__main__':
     args = get_args()
     trainer = supervised(args)
-    trainer.pretreatment("./data/runtime.csv")
+    trainer.pretreatment("runtime")
 
     for i in range(trainer.datasetnumber):
         trainer.load_data(i)
