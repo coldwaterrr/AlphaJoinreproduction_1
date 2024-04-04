@@ -34,12 +34,16 @@ class supervised:
         a = f.read()
         short_to_long = eval(a)
         f.close()
-        for i in short_to_long.keys():
+        for i in short_to_long.keys():  # 表对应的缩写写进tables里
             tables.append(i)
-        tables.sort()
+        # print(tables)
+        tables.sort()  # 按字母顺序排序
+        print(tables)
         self.table_to_int = {}
-        for i in range(len(tables)):
+        for i in range(len(tables)):  # 所有表的数量->28个 里面包含了索引21+7
             self.table_to_int[tables[i]] = i
+        # print(self.table_to_int)
+        print(len(tables))
 
         # The dimension of the network input vector
         # 网络输入向量的维度
@@ -113,9 +117,9 @@ class supervised:
         self.dataList.sort(key=lambda x: x.time, reverse=False)
         for i in range(self.dataList.__len__()):
             self.dataList[i].label = int(i / (self.dataList.__len__() / self.num_output + 1))
-            print(self.dataList[i].label)
-            print(self.dataList.__len__())
-            print(self.num_output)
+            # print(self.dataList[i].label)
+            # print(self.dataList.__len__())
+            # print(self.num_output)
         for i in range(int(self.dataList.__len__() * 0.3)):
             index = random.randint(0, len(self.dataList) - 1)
             temp = self.dataList.pop(index)

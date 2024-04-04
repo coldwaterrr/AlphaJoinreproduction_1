@@ -37,14 +37,17 @@ class supervised:
         a = f.read()
         short_to_long = eval(a)
         f.close()
-        for i in short_to_long.keys():
+        for i in short_to_long.keys():  # 把缩写加到tables里
             tables.append(i)
+        # print(tables)
         tables.sort()
+        # print(tables)
         self.table_to_int = {}
         for i in range(len(tables)):
             self.table_to_int[tables[i]] = i
         
         # The dimension of the network input vector
+        # 网络输入向量的维度
         # self.num_inputs = len(tables) * len(tables) + len(self.queryEncodedDict["1a"])
         # print(len(self.queryEncodedDict["1a"]))
         # print(self.num_inputs)
