@@ -55,10 +55,15 @@ class supervised:
         self.right = 0
 
         # build up the network
-        self.value_net = ValueNet(self.num_inputs, self.num_output)
-        self.actor_net = ValueNet(self.num_inputs, self.num_output)
-        if self.args.cuda:
-            self.actor_net.cuda()
+        # 建立网络
+        self.value_net = ValueNet(self.num_inputs, self.num_output)  # 值网络
+        self.actor_net = ValueNet(self.num_inputs, self.num_output)  # 动作网络？又啥区别
+        # if self.args.cuda:
+        #     print("使用了GPU")
+        #     self.actor_net.cuda()
+        print("使用了GPU")
+        self.actor_net.cuda()
+
         # check some dir
         if not os.path.exists(self.args.save_dir):
             os.mkdir(self.args.save_dir)
@@ -162,7 +167,7 @@ class supervised:
             label = []
             label.append(self.dataList[index].label)
             label_tensor = torch.tensor(label)
-            print(label_tensor)
+            # print(label_tensor)
 
             loss = loss_func(predictionRuntime, label_tensor)
 
