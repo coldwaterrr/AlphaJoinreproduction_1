@@ -58,11 +58,11 @@ class supervised:
         # 建立网络
         self.value_net = ValueNet(self.num_inputs, self.num_output)  # 值网络
         self.actor_net = ValueNet(self.num_inputs, self.num_output)  # 动作网络？又啥区别
-        # if self.args.cuda:
-        #     print("使用了GPU")
-        #     self.actor_net.cuda()
-        print("使用了GPU")
-        self.actor_net.cuda()
+        if self.args.cuda:
+            print("使用了GPU")
+            self.actor_net.cuda()
+        # print("使用了GPU")
+        # self.actor_net.cuda()
 
         # check some dir
         if not os.path.exists(self.args.save_dir):
@@ -105,9 +105,11 @@ class supervised:
         line = file_test.readline()
         while line:
             queryName = line.split(",")[0].encode('utf-8').decode('utf-8-sig').strip()  # strip默认去头尾多余空格
-            hint = line.split(",")[1]
-            matrix = self.hint2matrix(hint)
+            hint = line.split(",")[1]  # ( ( ( ( ( mc ( ci rt ) ) cn ) t ) chn ) ct )
+            matrix = self.hint2matrix(hint)  # 变成paper图一右边的图
             predicatesEncode = self.predicatesEncodeDict[queryName]
+            print(queryName,end="\t\t\t")
+            print(predicatesEncode)
             state = matrix.flatten().tolist()[0]
             state = state + predicatesEncode
             runtime = line.split(",")[2].strip()
@@ -187,6 +189,7 @@ class supervised:
     # functions to test the network
     # 测试网络的函数
     def test_network(self):
+        device = torch.device("cuda:0")
         self.load_data()
         model_path = self.args.save_dir + 'supervised.pt'
         # self.actor_net = self.value_net(self.num_inputs, self.num_output)
@@ -200,6 +203,7 @@ class supervised:
 
             predictionRuntime = self.actor_net(state_tensor)
             prediction = predictionRuntime.detach().cpu().numpy()
+            # prediction = predictionRuntime.detach()
             maxindex = np.argmax(prediction)
             label = self.testList[step].label
             # print(maxindex, "\t", label)
