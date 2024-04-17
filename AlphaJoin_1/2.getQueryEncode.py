@@ -2,12 +2,19 @@ import os
 import json
 import ast
 from getResource import getResource
+import psycopg2
 
 querydir = '../resource/jobquery'  # imdb的查询语句
 tablenamedir = '../resource/jobtablename'  # 每条语句对应表名的别名(缩写)
 shorttolongpath = '../resource/shorttolong'  # 缩写与全名的映射
 predicatesEncodeDictpath = './predicatesEncodedDict'
 queryEncodeDictpath = './queryEncodedDict'
+
+# 数据库连接参数
+print("connecting...")
+conn = psycopg2.connect(database="imdb", user="postgres", password="postgres", host="localhost", port="5432")
+cur = conn.cursor()
+print("connect success")
 
 # 打开文件并读取内容
 with open('shottolong.txt', 'r') as file:
@@ -31,13 +38,16 @@ for i in data:
 # print(type(data))
 # print(longtoshort)
 
+selectivity = dict()
+
 # Get all the attributes used to select the filter vector
 # 获取用于选择滤波器向量的所有属性
 def getQueryAttributions():
     fileList = os.listdir(querydir)
     fileList.sort()
     attr = set()  # 创建一个无序不重复的元素集
-    selectivity = dict()
+
+    rowscount = dict()
 
 
 
@@ -71,14 +81,78 @@ def getQueryAttributions():
                     column = word.split('.')[1]
                     # print(type(column))
                     long_tablename = shorttolong[short_tablename]
-                    print(long_tablename)
+                    # print(long_tablename)
                     # selectivity[word] = s_value
 
-                    key_exist = long_tablename in selectivity
-                    if key_exist == False:
-                        
-                    else:
+                    if column == 'kind' or column == 'id' or column == 'role':
+                        selectivity[word] = 1.0
 
+                    # 最简单的选择率:唯一值数/行数
+                    # 获取每一张表的具体行数
+                    key_exist_1 = word in selectivity
+                    key_exist_2 = long_tablename in rowscount
+                    if key_exist_1 == False and key_exist_2 == False:
+                        sql = '''
+                        select count(*) from %s
+                        '''% (long_tablename)
+                        cur.execute(sql)
+                        rows = cur.fetchall()
+                        # print(type(rows))
+                        # print(rows)
+                        for row in rows:
+                            rowscount[long_tablename] = float(row[0])
+
+                    # 查出唯一值，计算选择率
+                        sql='''
+                        select n_distinct from pg_stats where tablename = '%s' and attname = '%s'
+                        ''' % (long_tablename, column)
+                        cur.execute(sql)
+                        rows = cur.fetchall()
+                        # print(rows)
+                        for row in rows:
+                            n_distinct = float(row[0])
+                            if n_distinct > rowscount[long_tablename]:
+                                print(column+'  n_distinct:', end='')
+                                print(float(row[0]))
+                                print('rowscount  '+long_tablename+':', end='')
+                                print(rowscount[long_tablename])
+                        if n_distinct < 0:
+                            selectivity[word] = -n_distinct
+                        else:
+                            selectivity[word] = n_distinct / rowscount[long_tablename]
+                        # for row in rows:
+                        #     if int(row) < 0:
+
+
+                    elif key_exist_1 == False and key_exist_2 == True:
+                        # 查出唯一值，计算选择率
+                        sql = '''
+                        select n_distinct from pg_stats where tablename = '%s' and attname = '%s'
+                        ''' % (long_tablename, column)
+                        cur.execute(sql)
+                        rows = cur.fetchall()
+                        # print(rows)
+                        for row in rows:
+                            n_distinct = float(row[0])
+                            if n_distinct > rowscount[long_tablename]:
+                                print(column + '  n_distinct:', end='')
+                                print(float(row[0]))
+                                print('rowscount  ' + long_tablename + ':', end='')
+                                print(rowscount[long_tablename])
+                        if n_distinct < 0:
+                            selectivity[word] = -n_distinct
+                        else:
+                            selectivity[word] = n_distinct / rowscount[long_tablename];
+
+                        if n_distinct > float(rowscount[long_tablename]):
+                            print(column + '  n_distinct:', end='')
+                            print(float(row[0]))
+                            print('rowscount  ' + long_tablename + ':', end='')
+                            print(float(rowscount[long_tablename]))
+                        if n_distinct < 0:
+                            selectivity[word] = -n_distinct
+                        else:
+                            selectivity[word] = n_distinct / float(rowscount[long_tablename])
 
                     # print(word)
                     attr.add(word)
@@ -120,7 +194,8 @@ def getQueryEncode(attrNames):
         int_to_attr[i] = attrNames[i]
         attr_to_int[attrNames[i]] = i
     # print(table_to_int)
-
+    print('attr_to_int')
+    print(attr_to_int)
     queryEncodeDict = {}
     joinEncodeDict = {}
     predicatesEncodeDict = {}
@@ -165,7 +240,7 @@ def getQueryEncode(attrNames):
                                 word = word[1:]
                             if word[-1] == ';':
                                 word = word[:-1]
-                            predicatesEncode[attr_to_int[word]] = 1
+                            predicatesEncode[attr_to_int[word]] = selectivity[word]
             else:
                 for word in temp:
                     if '.' in word:
