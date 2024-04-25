@@ -147,6 +147,7 @@ class supervised:
             pickle.dump(value, file_train)
         file_train.close()
 
+
     # functions to train the network
     # 训练网络的函数
     def supervised(self):
@@ -157,6 +158,7 @@ class supervised:
         loss_func = torch.nn.NLLLoss()
         loss1000 = 0
         count = 0
+        max_correct = 0
 
         for step in range(1, 16000001):
             index = random.randint(0, len(self.dataList) - 1)
@@ -181,17 +183,19 @@ class supervised:
                 print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
                 loss1000 = 0
                 # self.test_network() ??
-                print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
-            if step % 200000 == 0:
+                # print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
+            if step % 50000 == 0:
                 torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised.pt')
-                # self.test_network()
+                if self.test_network() > max_correct:
+                    max_correct = self.test_network()
+                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best.pt')
 
     # functions to test the network
     # 测试网络的函数
     def test_network(self):
         device = torch.device("cuda:0")
         self.load_data()
-        model_path = self.args.save_dir + 'supervised.pt'
+        model_path = self.args.save_dir + 'supervised_best.pt'
         # self.actor_net = self.value_net(self.num_inputs, self.num_output)
         self.actor_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
         self.actor_net.eval()
@@ -226,6 +230,7 @@ class supervised:
                 correct1 += 1
         print(correct1, self.dataList.__len__(), correct1 / self.dataList.__len__())
         self.right = correct / self.testList.__len__()
+        return correct
 
     def load_data(self):
         if self.dataList.__len__() != 0:
