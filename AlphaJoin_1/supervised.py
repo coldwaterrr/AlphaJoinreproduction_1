@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import pickle
 from models import ValueNet
+from resnet import ResNet
 
 shortToLongPath = '../resource/shorttolong'
 predicatesEncodeDictPath = './predicatesEncodedDict'
@@ -47,20 +48,21 @@ class supervised:
 
         # The dimension of the network input vector
         # 网络输入向量的维度
-        self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])
+        self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])  # predicatesEncodeDict[queryname] 长度统一为 72
         # The dimension of the vector output by the network
         # 网络输出向量的维度
-        self.num_output = 5
+        self.num_output = 5  # ?
         self.args = args
         self.right = 0
 
         # build up the network
         # 建立网络
-        self.value_net = ValueNet(self.num_inputs, self.num_output)  # 值网络
-        self.actor_net = ValueNet(self.num_inputs, self.num_output)  # 动作网络？又啥区别
+        self.value_net = ValueNet(self.num_inputs, self.num_output)  # 值网络  普通神经网络
+        # self.value_net = ResNet(self.num_inputs, self.num_output)  # ResNet
+        # self.actor_net = ValueNet(self.num_inputs, self.num_output)  # 动作网络？有啥区别
         if self.args.cuda:
             print("使用了GPU")
-            self.actor_net.cuda()
+            self.value_net.cuda()
         # print("使用了GPU")
         # self.actor_net.cuda()
 
@@ -75,7 +77,7 @@ class supervised:
     # 解析查询计划,计划编码的过程,最后得到论文中图一右边的图
     def hint2matrix(self, hint):  # ( ( ( ( ( mc ( ci rt ) ) cn ) t ) chn ) ct )
         tablesInQuery = hint.split(" ")
-        matrix = np.mat(np.zeros((len(self.table_to_int), len(self.table_to_int))))
+        matrix = np.mat(np.zeros((len(self.table_to_int), len(self.table_to_int))))  # numpy.mat()矩阵类型，这是生成一个28*28的全0矩阵
         stack = []
         difference = 0
         for i in tablesInQuery:
@@ -89,7 +91,14 @@ class supervised:
                 a.sort()
                 indexb = self.table_to_int[b[0]]
                 indexa = self.table_to_int[a[0]]
-                matrix[indexa, indexb] = (len(tablesInQuery) + 2) / 3 - difference
+                print('indexb:'+b[0], end=' ')
+                print(indexb)
+                print('indexa:'+a[0], end='  ')
+                print(indexa)
+                print(len(tablesInQuery))
+                print(difference)
+                print(tablesInQuery)
+                matrix[indexa, indexb] = (len(tablesInQuery) + 2) / 3 - difference  # indexa和indexb是横坐标和纵坐标
                 difference += 1
                 stack.append(tempa + '+' + tempb)
                 # print(stack)
@@ -108,10 +117,13 @@ class supervised:
             hint = line.split(",")[1]  # ( ( ( ( ( mc ( ci rt ) ) cn ) t ) chn ) ct )
             matrix = self.hint2matrix(hint)  # 变成paper图一右边的图
             predicatesEncode = self.predicatesEncodeDict[queryName]
-            print(queryName,end="\t\t\t")
-            print(predicatesEncode)
+            print(queryName, end="\t\t")
+            # print(type(queryName), end='\t')
+            print(predicatesEncode, end="\t")
+            print(len(predicatesEncode))
             state = matrix.flatten().tolist()[0]
             state = state + predicatesEncode
+            print(state)
             runtime = line.split(",")[2].strip()
             if runtime == 'timeout':
                 runtime = 'timeout'  # Depends on your settings
@@ -152,12 +164,12 @@ class supervised:
     # 训练网络的函数
     def supervised(self):
         self.load_data()
-        optim = torch.optim.SGD(self.value_net.parameters(), lr=0.01)
+        optim = torch.optim.SGD(self.value_net.parameters(), lr=0.01)  # 优化器
         # loss_func = torch.nn.MSELoss()
         # loss_func = torch.nn.CrossEntropyLoss()
-        loss_func = torch.nn.NLLLoss()
+        loss_func = torch.nn.NLLLoss()  # Negative Log Likelihood Loss,通常用于多分类问题，是一种损失函数的计算方法
         loss1000 = 0
-        count = 0
+        # count = 0
         max_correct = 0
 
         for step in range(1, 16000001):
@@ -184,28 +196,28 @@ class supervised:
                 loss1000 = 0
                 # self.test_network() ??
                 # print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
-            if step % 50000 == 0:
+            if step % 5000 == 0:
                 torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised.pt')
                 if self.test_network() > max_correct:
                     max_correct = self.test_network()
-                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best.pt')
+                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_0.848.pt')
 
     # functions to test the network
     # 测试网络的函数
     def test_network(self):
         device = torch.device("cuda:0")
         self.load_data()
-        model_path = self.args.save_dir + 'supervised_best.pt'
+        model_path = self.args.save_dir + 'supervised_0.848.pt'
         # self.actor_net = self.value_net(self.num_inputs, self.num_output)
-        self.actor_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
-        self.actor_net.eval()
+        self.value_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
+        self.value_net.eval()
 
         correct = 0
         for step in range(self.testList.__len__()):
             state = self.testList[step].state
             state_tensor = torch.tensor(state, dtype=torch.float32)
 
-            predictionRuntime = self.actor_net(state_tensor)
+            predictionRuntime = self.value_net(state_tensor)
             prediction = predictionRuntime.detach().cpu().numpy()
             # prediction = predictionRuntime.detach()
             maxindex = np.argmax(prediction)
@@ -220,7 +232,7 @@ class supervised:
             state = self.dataList[step].state
             state_tensor = torch.tensor(state, dtype=torch.float32)
 
-            predictionRuntime = self.actor_net(state_tensor)
+            predictionRuntime = self.value_net(state_tensor)
             # prediction = predictionRuntime.detach().cpu().numpy()[0]
             prediction = predictionRuntime.detach().cpu().numpy()
             maxindex = np.argmax(prediction)

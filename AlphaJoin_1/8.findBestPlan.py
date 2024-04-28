@@ -5,10 +5,10 @@ from mcts import mcts
 import time
 
 
-queryEncodeDictPath = './queryEncodedDict' 
+queryEncodeDictPath = './queryEncodedDict'
 predicatesEncodeDictPath = './predicatesEncodedDict'
-shorttolongpath = '../resource/shorttolong'  
-tablenamedir = '../resource/jobtablename' 
+shorttolongpath = '../resource/shorttolong'
+tablenamedir = '../resource/jobtablename'
 querydir = "../resource/jobquery"
 
 f = open(queryEncodeDictPath, 'r')
