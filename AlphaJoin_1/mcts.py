@@ -6,7 +6,7 @@ from copy import deepcopy
 import numpy as np
 from models import ValueNet
 import torch
-model_path = './saved_models/supervised_0.848.pt'
+model_path = './saved_models/supervised_best_k5.pt'
 
 predictionNet = ValueNet(856, 5)
 predictionNet.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))

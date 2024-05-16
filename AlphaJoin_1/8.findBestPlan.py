@@ -133,7 +133,7 @@ def decode(currentState, tableList):
 def findBestPlan():
     queryNameList = os.listdir(tablenamedir)
     queryNameList.sort()
-    searchFactor = 15
+    searchFactor = 1
     for queryName in queryNameList:
         # Get the list of queried tables
         tablenamepath = tablenamedir + "/" + queryName

@@ -1,0 +1,113 @@
+10a , ( rt ( ct ( ( chn ci ) ( t ( cn mc ) ) ) ) ) ,306.033
+10b , ( ( ct ( t ( cn mc ) ) ) ( ( chn ci ) rt ) ) ,325.376
+10c , ( ( rt ( chn ( ci t ) ) ) ( ct ( cn mc ) ) ) ,322.400
+11a , ( ( ct ( ( ( mc t ) ( mk ( ml lt ) ) ) k ) ) cn ) ,502.449
+11b , ( ct ( ( mc cn ) ( ( ( lt ml ) ( k mk ) ) t ) ) ) ,614.048
+11c , ( ( k ( cn ( ( mk t ) ( ( lt ml ) mc ) ) ) ) ct ) ,568.416
+11d , ( ( cn ( k ( ( mc mk ) ( lt ( ml t ) ) ) ) ) ct ) ,542.623
+12a , ( ( ct ( it1 ( ( cn mc ) ( ( mi mi_idx ) it ) ) ) ) t ) ,596.688
+12b , ( ( ( t ( it mi_idx ) ) ( ( it1 mi ) ( cn mc ) ) ) ct ) ,599.169
+12c , ( ct ( ( ( ( mi_idx mi ) it ) ( ( cn mc ) t ) ) it1 ) ) ,577.344
+13a , ( ( ( ( mi_idx ( ct ( cn mc ) ) ) ( kt t ) ) ( mi it1 ) ) it ) ,988.032
+13b , ( ( it1 ( ( ( ct ( ( cn mc ) t ) ) mi ) ( it mi_idx ) ) ) kt ) ,839.728
+13c , ( kt ( it ( mi_idx ( ( ( ( cn mc ) ct ) ( t mi ) ) it1 ) ) ) ) ,754.912
+13d , ( kt ( ( ct ( ( ( ( t mi ) mi_idx ) it ) ( cn mc ) ) ) it1 ) ) ,763.345
+14a , ( it1 ( ( kt ( ( mi t ) ( mk k ) ) ) ( it mi_idx ) ) ) ,611.567
+14b , ( ( it ( ( it1 ( mi mi_idx ) ) ( k ( mk t ) ) ) ) kt ) ,544.111
+14c , ( ( kt ( ( ( mi mi_idx ) it ) ( k ( t mk ) ) ) ) it1 ) ,534.688
+15a , ( it1 ( ( ( ( k ( mk mc ) ) ct ) cn ) ( ( t at ) mi ) ) ) ,877.920
+15b , ( ( ( it1 ( t mi ) ) ( ( mc ( at ( mk k ) ) ) ct ) ) cn ) ,883.403
+15c , ( ( ( ( ( mi ( at mk ) ) t ) k ) ( ( cn mc ) ct ) ) it1 ) ,849.609
+15d , ( ( cn ( ( ct ( t mc ) ) ( k mk ) ) ) ( ( at mi ) it1 ) ) ,887.839
+16a , ( ( an ( t ( ci n ) ) ) ( cn ( mc ( k mk ) ) ) ) ,637.361
+16b , ( ( cn ( ( ( mc ( ( mk k ) t ) ) ci ) n ) ) an ) ,623.979
+16c , ( ( ( mk t ) ( ( cn ( ( ci mc ) n ) ) an ) ) k ) ,560.976
+16d , ( ( ( ( mk ci ) k ) ( an n ) ) ( t ( cn mc ) ) ) ,626.945
+17a , ( ( n ( k ( cn ( ( ci mc ) mk ) ) ) ) t ) ,378.447
+17b , ( k ( ( n ci ) ( ( cn mc ) ( t mk ) ) ) ) ,441.936
+17c , ( n ( ( ( cn ( mc t ) ) ( mk k ) ) ci ) ) ,386.384
+17d , ( ( ( cn mc ) t ) ( ( n ci ) ( mk k ) ) ) ,456.321
+17e , ( n ( ( ci ( ( ( mk mc ) k ) t ) ) cn ) ) ,374.977
+17f , ( k ( ( n ( ( cn mc ) ( ci t ) ) ) mk ) ) ,376.959
+18a , ( ( it ( mi_idx t ) ) ( ( it1 ( ci mi ) ) n ) ) ,380.929
+18b , ( ( it1 ( ( ( ( mi_idx it ) t ) mi ) ci ) ) n ) ,409.200
+18c , ( it1 ( n ( ( mi ( ( mi_idx it ) t ) ) ci ) ) ) ,437.472
+19a , ( ( cn mc ) ( ( ( mi it ) ( ( t ( chn ( ci an ) ) ) rt ) ) n ) ) ,1216.180
+19b , ( ( t ( ( it ( mi ( ( cn mc ) ( rt ci ) ) ) ) ( n an ) ) ) chn ) ,1171.553
+19c , ( ( it mi ) ( rt ( ( cn mc ) ( ( ( n ( t ci ) ) an ) chn ) ) ) ) ,1094.672
+19d , ( chn ( ( ( ( cn mc ) ( rt ( ci n ) ) ) an ) ( ( t mi ) it ) ) ) ,1173.536
+1a , ( ( ( mi_idx it ) t ) ( mc ct ) ) ,140.368
+1b , ( ( ( mc t ) ct ) ( it mi_idx ) ) ,124.496
+1c , ( ( ( mi_idx ( t mc ) ) it ) ct ) ,126.976
+1d , ( ( ( mi_idx it ) t ) ( ct mc ) ) ,139.375
+20a , ( cct2 ( n ( ( chn ( ( ( kt t ) ( cc cct1 ) ) ( ci mk ) ) ) k ) ) ) ,969.681
+20b , ( ( ( ( cct2 ( ( ( cc ( ( t mk ) ci ) ) cct1 ) kt ) ) k ) chn ) n ) ,943.391
+20c , ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) ( n ci ) ) chn ) ( k mk ) ) ,1156.673
+21a , ( ( ( mi t ) ( ct ( ( ( mc mk ) ( lt ml ) ) cn ) ) ) k ) ,932.977
+21b , ( ct ( cn ( ( ( ml lt ) ( t mi ) ) ( mc ( mk k ) ) ) ) ) ,890.321
+21c , ( cn ( ct ( k ( ( ( mc mi ) ( mk t ) ) ( lt ml ) ) ) ) ) ,904.704
+22a , ( ( ( ( ( ( it mi_idx ) mk ) ( it1 mi ) ) k ) ( ( ct ( cn mc ) ) t ) ) kt ) ,1740.464
+22b , ( ( ( ( ( it1 ( ( ( k mk ) ( t mi_idx ) ) ( mc mi ) ) ) it ) ct ) cn ) kt ) ,1486.513
+22c , ( ( ( ct ( ( t ( it ( ( mi_idx mi ) it1 ) ) ) ( cn ( mk mc ) ) ) ) kt ) k ) ,1466.672
+22d , ( ( kt t ) ( ( ct ( cn mc ) ) ( ( ( it mi_idx ) ( it1 mi ) ) ( mk k ) ) ) ) ,1930.928
+23a , ( ( k ( ( cc cct1 ) ( ( ct ( ( mk mi ) ( ( cn mc ) t ) ) ) kt ) ) ) it1 ) ,1514.784
+23b , ( ( ( ( ( cn ( ( mc ( cc t ) ) ( ( mk mi ) it1 ) ) ) cct1 ) ct ) k ) kt ) ,1385.328
+23c , ( ( kt ( it1 ( ( ( ( mk k ) ( cc cct1 ) ) t ) ( mi ( cn mc ) ) ) ) ) ct ) ,1730.544
+24a , ( chn ( ( it ( ( k ( mk ( mi t ) ) ) ( cn mc ) ) ) ( ( rt ( ci an ) ) n ) ) ) ,2091.631
+24b , ( ( ( an n ) ( rt ( ( ( ci chn ) ( cn mc ) ) ( ( mk t ) k ) ) ) ) ( mi it ) ) ,2069.808
+25a , ( ( ( ci n ) ( ( ( it ( t mi_idx ) ) mi ) it1 ) ) ( mk k ) ) ,979.601
+25b , ( ( ( ( it mi_idx ) ( ( k mk ) ( it1 mi ) ) ) ( t ci ) ) n ) ,1571.824
+25c , ( ( ( t ci ) n ) ( ( ( ( mi mi_idx ) ( k mk ) ) it1 ) it ) ) ,1757.823
+26a , ( n ( kt ( k ( ( chn ( ( ci ( mi_idx t ) ) ( ( cct2 ( cc mk ) ) cct1 ) ) ) it ) ) ) ) ,3657.508
+26b , ( ( ( ( n ( cct2 ( ( ( ( mi_idx mk ) ( ( cc ci ) cct1 ) ) t ) chn ) ) ) k ) it ) kt ) ,3225.484
+26c , ( kt ( ( chn ( ( it mi_idx ) ( ( t ci ) n ) ) ) ( k ( ( cct2 ( cc cct1 ) ) mk ) ) ) ) ,3598.978
+27a , ( cct1 ( ( ( ( ( cc ( mk mi ) ) k ) cct2 ) ( ( lt ( ( ml t ) mc ) ) cn ) ) ct ) ) ,3920.384
+27b , ( cn ( ( ( ( ( ml ( ( mk ( t ( ( mc cc ) ct ) ) ) cct1 ) ) cct2 ) mi ) k ) lt ) ) ,3953.120
+27c , ( ( cct1 ( lt ( ( cc cct2 ) ml ) ) ) ( ( ( k ( ( t mc ) ( mi mk ) ) ) ct ) cn ) ) ,2812.356
+28a , ( ( cn ( ( ct ( kt ( ( ( t ( it1 mi ) ) ( ( cc cct2 ) mc ) ) cct1 ) ) ) ( k ( mi_idx mk ) ) ) ) it ) ,3627.709
+28b , ( ( ( ( kt ( ( ( t ( ( cc mi_idx ) cct2 ) ) cct1 ) ( it1 ( k ( mi ( mc mk ) ) ) ) ) ) cn ) ct ) it ) ,3160.513
+28c , ( ( ( ( cct2 ( ( t ( ( cn ( mc mi ) ) it1 ) ) ( ( it ( ( cc mi_idx ) mk ) ) cct1 ) ) ) ct ) kt ) k ) ,3126.287
+29a , ( ( ( an ( cn ( ( rt ( ( ( ( ( mi cc ) cct2 ) it ) ( mk ( mc ( ( ( it1 pi ) ci ) n ) ) ) ) chn ) ) t ) ) ) cct1 ) k ) ,6429.650
+29b , ( ( ( ( ( cct1 ( ( ( ( n an ) ( mk ( chn ( pi ci ) ) ) ) rt ) ( ( ( cc t ) cct2 ) ( mc mi ) ) ) ) cn ) it1 ) k ) it ) ,6010.031
+29c , ( ( ( ( ( t mc ) ( mk k ) ) cn ) ( n ( it ( an ( cct2 ( rt ( ( cc mi ) ( ( it1 ( ci pi ) ) chn ) ) ) ) ) ) ) ) cct1 ) ,5890.002
+2a , ( ( cn mc ) ( k ( t mk ) ) ) ,135.408
+2b , ( ( ( ( cn mc ) t ) mk ) k ) ,148.305
+2c , ( cn ( ( mk k ) ( mc t ) ) ) ,142.352
+2d , ( ( mk k ) ( ( cn mc ) t ) ) ,133.920
+30a , ( ( cct2 ( ( ( k ( cct1 ( ( cc mk ) ci ) ) ) ( ( it ( t mi_idx ) ) mi ) ) n ) ) it1 ) ,2336.656
+30b , ( ( cct2 ( it1 ( cct1 ( k ( ( ( mi_idx ci ) ( ( mk ( cc t ) ) mi ) ) n ) ) ) ) ) it ) ,2799.425
+30c , ( it1 ( ( ( ( mi mi_idx ) ( n ( ( ( ci mk ) k ) ( ( cc t ) cct1 ) ) ) ) it ) cct2 ) ) ,3937.743
+31a , ( ( it ( ( t ( mk k ) ) ( ( ( ( mi_idx ci ) n ) ( mi mc ) ) cn ) ) ) it1 ) ,3270.122
+31b , ( ( n ( ci ( it1 ( ( t mi_idx ) ( k ( ( cn mc ) ( mi mk ) ) ) ) ) ) ) it ) ,3351.473
+31c , ( ( ( cn mc ) ( ( ( ( mk ( mi t ) ) ( it ( mi_idx ci ) ) ) k ) n ) ) it1 ) ,3114.384
+32a , ( ( mk k ) ( t1 ( ( ml lt ) t ) ) ) ,268.335
+32b , ( ( mk ( ( lt ( ml t1 ) ) t ) ) k ) ,224.192
+33a , ( ( ( ( t1 ( ( cn ( mc1 ( ( lt ml ) mc ) ) ) cn1 ) ) kt1 ) ( ( ( it mi_idx ) t ) kt ) ) ( mi_idx1 it1 ) ) ,3154.064
+33b , ( ( ( ( ( it1 ( ( ( mi_idx1 t1 ) ( ml lt ) ) kt1 ) ) mc1 ) cn1 ) ( mi_idx ( cn ( kt ( t mc ) ) ) ) ) it ) ,3156.048
+33c , ( cn1 ( ( mc1 ( ( ( ( ml lt ) t1 ) ( mi_idx1 it1 ) ) kt1 ) ) ( kt ( ( ( cn ( mc t ) ) mi_idx ) it ) ) ) ) ,3183.330
+3a , ( ( t mi ) ( mk k ) ) ,85.311
+3b , ( ( ( mk k ) mi ) t ) ,80.353
+3c , ( ( t ( mk k ) ) mi ) ,80.848
+4a , ( it ( mi_idx ( ( mk k ) t ) ) ) ,146.319
+4b , ( it ( ( mi_idx t ) ( mk k ) ) ) ,135.904
+4c , ( t ( it ( ( k mk ) mi_idx ) ) ) ,135.408
+5a , ( it ( ct ( mi ( t mc ) ) ) ) ,145.823
+5b , ( ( it ( mi ( mc t ) ) ) ct ) ,131.936
+5c , ( ( ( t ( mc mi ) ) ct ) it ) ,133.423
+6a , ( ( mk k ) ( t ( ci n ) ) ) ,146.321
+6b , ( ( ( mk k ) t ) ( n ci ) ) ,137.391
+6c , ( ( t ( ci n ) ) ( k mk ) ) ,145.824
+6d , ( ( mk k ) ( ( t ci ) n ) ) ,160.702
+6e , ( ( ( t ( k mk ) ) ci ) n ) ,141.361
+6f , ( ( k mk ) ( ( t ci ) n ) ) ,132.927
+7a , ( ( ( ( ml t ) lt ) ( ( n ( ci pi ) ) an ) ) it ) ,607.104
+7b , ( ( ( it ( ci ( n pi ) ) ) an ) ( ( ml lt ) t ) ) ,671.088
+7c , ( it ( ( lt ml ) ( ( ( t ci ) n ) ( pi an ) ) ) ) ,621.489
+8a , ( ( t ( ( rt ( ci an ) ) ( cn mc ) ) ) n ) ,400.272
+8b , ( rt ( n ( ( cn mc ) ( ( ci t ) an ) ) ) ) ,386.385
+8c , ( ( n an ) ( ( t ( cn mc ) ) ( rt ci ) ) ) ,386.384
+8d , ( ( n an ) ( ( rt ( ci ( cn mc ) ) ) t ) ) ,396.303
+9a , ( t ( ( ( an n ) ( ( ci ( cn mc ) ) chn ) ) rt ) ) ,544.608
+9b , ( ( ( ( ci chn ) ( n an ) ) ( ( cn mc ) t ) ) rt ) ,566.432
+9c , ( ( ( rt ( chn ( ( cn mc ) ci ) ) ) ( n an ) ) t ) ,546.098
+9d , ( ( ( t ( cn mc ) ) ( ( ( ci an ) chn ) rt ) ) n ) ,557.999
