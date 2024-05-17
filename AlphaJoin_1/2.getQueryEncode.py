@@ -111,11 +111,11 @@ def getQueryAttributions():
                         # print(rows)
                         for row in rows:
                             n_distinct = float(row[0])
-                            if n_distinct > rowscount[long_tablename]:
-                                print(column+'  n_distinct:', end='')
-                                print(float(row[0]))
-                                print('rowscount  '+long_tablename+':', end='')
-                                print(rowscount[long_tablename])
+                            # if n_distinct > rowscount[long_tablename]:
+                            #     print(column+'  n_distinct:', end='')
+                            #     print(float(row[0]))
+                            #     print('rowscount  '+long_tablename+':', end='')
+                            #     print(rowscount[long_tablename])
                         if n_distinct < 0:
                             selectivity[word] = -n_distinct
                         else:
@@ -134,21 +134,21 @@ def getQueryAttributions():
                         # print(rows)
                         for row in rows:
                             n_distinct = float(row[0])
-                            if n_distinct > rowscount[long_tablename]:
-                                print(column + '  n_distinct:', end='')
-                                print(float(row[0]))
-                                print('rowscount  ' + long_tablename + ':', end='')
-                                print(rowscount[long_tablename])
+                            # if n_distinct > rowscount[long_tablename]:
+                            #     print(column + '  n_distinct:', end='')
+                            #     print(float(row[0]))
+                            #     print('rowscount  ' + long_tablename + ':', end='')
+                            #     print(rowscount[long_tablename])
                         if n_distinct < 0:
                             selectivity[word] = -n_distinct
                         else:
                             selectivity[word] = n_distinct / rowscount[long_tablename];
 
-                        if n_distinct > float(rowscount[long_tablename]):
-                            print(column + '  n_distinct:', end='')
-                            print(float(row[0]))
-                            print('rowscount  ' + long_tablename + ':', end='')
-                            print(float(rowscount[long_tablename]))
+                        # if n_distinct > float(rowscount[long_tablename]):
+                        #     print(column + '  n_distinct:', end='')
+                        #     print(float(row[0]))
+                        #     print('rowscount  ' + long_tablename + ':', end='')
+                        #     print(float(rowscount[long_tablename]))
                         if n_distinct < 0:
                             selectivity[word] = -n_distinct
                         else:
@@ -250,7 +250,7 @@ def getQueryEncode(attrNames):
                             word = word[1:]
                         if word[-1] == ';':
                             word = word[:-1]
-                        predicatesEncode[attr_to_int[word]] = 1
+                        predicatesEncode[attr_to_int[word]] = selectivity[word]
         predicatesEncodeDict[queryName[:-4]] = predicatesEncode
         queryEncodeDict[queryName[:-4]] = joinEncode + predicatesEncode
 

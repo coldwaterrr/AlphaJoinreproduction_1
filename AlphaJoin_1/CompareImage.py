@@ -6,8 +6,8 @@ import math
 
 f_original = open("runtime_laptop")
 f_k4 = open("runtime_k4_1")
-f_k6 = open("runtime_k5_1")
-f_k5 = open("runtime_k6_1")
+f_k6 = open("runtime_k6_1_new")
+f_k5 = open("runtime_k5_1_new")
 
 line_original = f_original.readlines()
 line_k4 = f_k4.readlines()

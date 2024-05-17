@@ -53,7 +53,7 @@ class supervised:
         self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])  # predicatesEncodeDict[queryname] 长度统一为 72
         # The dimension of the vector output by the network
         # 网络输出向量的维度
-        self.num_output = 5
+        self.num_output = 6
         self.args = args
         self.right = 0
 
@@ -202,14 +202,14 @@ class supervised:
                 # self.test_network() ??
                 # print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
             if step % 1000 == 0:
-                torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_k5.pt')
+                torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_k6_new.pt')
                 loss_y.append(loss1000)
                 loss1000 = 0
                 correct_y.append(self.test_network())
                 epoch.append(step)
                 if self.test_network() > max_correct:
                     max_correct = self.test_network()
-                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best_k5.pt')
+                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best_k6_new.pt')
 
         # 绘制折线图
         plt.figure(figsize=(8, 5))
@@ -220,7 +220,7 @@ class supervised:
         plt.xlabel("epoch")
         plt.ylabel("Accuracy")
         plt.title("epoch-accuracy")
-        plt.savefig('accuracy_300000_5标签.png')
+        plt.savefig('accuracy_300000_6标签_new.png')
         # plt.show()
 
         plt.plot(epoch, loss_y)
@@ -229,7 +229,7 @@ class supervised:
         plt.xlabel("epoch")
         plt.ylabel("loss")
         plt.title("epoch-loss")
-        plt.savefig('loss_300000_5标签.png')
+        plt.savefig('loss_300000_6标签_new.png')
         # plt.show()
 
     # functions to test the network
@@ -237,7 +237,7 @@ class supervised:
     def test_network(self):
         device = torch.device("cuda:0")
         self.load_data()
-        model_path = self.args.save_dir + 'supervised_k5.pt'
+        model_path = self.args.save_dir + 'supervised_best_k6_new.pt'
         # self.actor_net = self.value_net(self.num_inputs, self.num_output)
         self.value_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
         self.value_net.eval()

@@ -42,12 +42,12 @@ for i in range(totalNumberOfTables):
     intToTable[i] = tables[i]
     tableToInt[tables[i]] = i
 
-
+# 10a 为例
 class planState:
     def __init__(self, totalNumberOfTables, numberOfTables, queryEncode, predicatesEncode):
-        self.tableNumber = totalNumberOfTables
-        self.currentStep = numberOfTables
-        self.board = [0 for _ in range(self.tableNumber * self.tableNumber)]
+        self.tableNumber = totalNumberOfTables  # 7
+        self.currentStep = numberOfTables  # 7 - 6 - 5 - ... - 1
+        self.board = [0 for _ in range(self.tableNumber * self.tableNumber)]  # 7 * 7矩阵
         self.joinMartix = queryEncode[:self.tableNumber * self.tableNumber]
         # for i in range(self.tableNumber):
         #     print("\n")
@@ -157,6 +157,7 @@ def findBestPlan():
             currentState = currentState.takeAction(action)
             # Change search times
             mct.searchLimit = (int)(len(currentState.getPossibleActions()) *  searchFactor)
+            # print(currentState.currentStep)
         elapsed = (time.time() - start) * 1000
         # Decode selected results
         hint = decode(currentState, tableList)

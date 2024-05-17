@@ -6,9 +6,9 @@ from copy import deepcopy
 import numpy as np
 from models import ValueNet
 import torch
-model_path = './saved_models/supervised_best_k5.pt'
+model_path = './saved_models/supervised_best_k6_new.pt'
 
-predictionNet = ValueNet(856, 5)
+predictionNet = ValueNet(856, 6)
 predictionNet.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
 predictionNet.eval()
 
@@ -19,7 +19,7 @@ def getReward(state):
         predictionRuntime = predictionNet(inputState)
     prediction = predictionRuntime.detach().cpu().numpy()
     maxindex = np.argmax(prediction)
-    reward = (4 - maxindex) / 4.0
+    reward = (5 - maxindex) / 5.0
     return reward
 
 
