@@ -161,7 +161,7 @@ def findBestPlan():
         elapsed = (time.time() - start) * 1000
         # Decode selected results
         hint = decode(currentState, tableList)
-        print(queryName, ",", hint, ",%.3f" % elapsed)
+        print(queryName, ",", hint, ",%.3f" % (elapsed))
 
 if __name__ == '__main__':
     findBestPlan()
