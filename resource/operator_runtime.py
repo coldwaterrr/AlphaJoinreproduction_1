@@ -56,6 +56,7 @@ for queryName in fileList:
     # print(file_context)
     # cur.execute(file_context)
     flag = 0
+    op = []
 
     for i in button:
         for j in button:
@@ -97,12 +98,19 @@ for queryName in fileList:
                 if float(cost) < float(min_cost):
                     min_cost = cost
                     min_count = count
+                    if min_count != 0:
+                        op.append(i)
+                        op.append(j)
+                        op.append(k)
                 count = count + 1
 
-    f1.write("\t")
+    f1.write("\t\t")
     f1.write(str(min_count))
     f1.write(':')
     f1.write(str(min_cost))
+    if len(op) == 3:
+        f1.write(',')
+        f1.write(op[0]+' '+op[1]+' '+op[2])
     f1.write('\n')
 
 f1.close()
