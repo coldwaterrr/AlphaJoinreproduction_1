@@ -47,8 +47,8 @@ class planState:
     def __init__(self, totalNumberOfTables, numberOfTables, queryEncode, predicatesEncode):
         self.tableNumber = totalNumberOfTables  # 7
         self.currentStep = numberOfTables  # 7 - 6 - 5 - ... - 1
-        self.board = [0 for _ in range(self.tableNumber * self.tableNumber)]  # 7 * 7矩阵
-        self.joinMartix = queryEncode[:self.tableNumber * self.tableNumber]
+        self.board = [0 for _ in range(self.tableNumber * self.tableNumber)]  # 7 * 7的全0矩阵
+        self.joinMartix = queryEncode[:self.tableNumber * self.tableNumber]  # 0，1矩阵部分
         # for i in range(self.tableNumber):
         #     print("\n")
         #     for j in range(i, self.tableNumber):
@@ -59,15 +59,17 @@ class planState:
         #             print(intToTable[j], end=" ")
         self.predicatesEncode = predicatesEncode
 
-
+    # 获取所有的二表连接作为可能的动作，两张表的一次连接算一个动作
     def getPossibleActions(self):
         possibleActions = []
-        for i in range(self.tableNumber):
-            for j in range(self.tableNumber):
-                if self.joinMartix[i * self.tableNumber + j] == 1:
-                    possibleActions.append(Action(self.currentStep, x=i, y=j))
+        for i in range(self.tableNumber):  # 7
+            for j in range(self.tableNumber):  # 7
+                if self.joinMartix[i * self.tableNumber + j] == 1:  # 如果有连接
+                    possibleActions.append(Action(self.currentStep, x=i, y=j))  # 当前的剩余步数和横纵坐标放进action,然后放到possibleAction
+                                                                                # Action就是个三元组
         return possibleActions
 
+    #
     def takeAction(self, action):
         newState = deepcopy(self)  # 深拷贝
         newState.currentStep = self.currentStep - 1
@@ -90,6 +92,7 @@ class planState:
             return True
         return False
 
+# 封装了执行的动作
 class Action:
     def __init__(self, step, x, y):
         self.currentStep = step
@@ -108,6 +111,8 @@ class Action:
     def __hash__(self):
         return hash((self.x, self.y, self.currentStep))
 
+
+# 解码
 def decode(currentState, tableList):
     tempdect = {}
     for i in range(len(tableList)):
@@ -141,20 +146,22 @@ def findBestPlan():
         file_context = file_object.read()
         tableList = eval(file_context)
         file_object.close()
+        print(len(tableList))
 
         # Construct the initial state
         # 构建初始状态
         initialState = planState(totalNumberOfTables, len(tableList), queryEncodeDict[queryName],
-                                predicatesEncodeDict[queryName])
+                                predicatesEncodeDict[queryName])  # 7，7，join+pre，pre
         currentState = initialState
 
         mct = mcts(iterationLimit=(int)(len(currentState.getPossibleActions()) *  searchFactor))        
         start = time.time()
         while currentState.currentStep != 1:
+            # print(mct.searchLimit)  # 会一直变？
             # Search for the best choice in the current state
-            action = mct.search(initialState=currentState)
+            action = mct.search(initialState=currentState)  #
             # Apply the selection, the status changes
-            currentState = currentState.takeAction(action)
+            currentState = currentState.takeAction(action)  # 这里变的
             # Change search times
             mct.searchLimit = (int)(len(currentState.getPossibleActions()) *  searchFactor)
             # print(currentState.currentStep)

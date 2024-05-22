@@ -36,7 +36,7 @@ def randomPolicy(state):
     # print(reward)
     return reward
 
-
+# 保存当前节点状态
 class treeNode():
     def __init__(self, state, parent):
         self.state = state
@@ -55,25 +55,31 @@ class mcts():
             raise ValueError("Must have either a time limit or an iteration limit")
         # number of iterations of the search
         if iterationLimit < 1:
-            raise ValueError("Iteration limit must be greater than one")
+            raise ValueError("Iteration limit must be greater than one")  # 极限要大于1
         self.searchLimit = iterationLimit
-        self.explorationConstant = explorationConstant
-        self.rollout = rolloutPolicy
+        self.explorationConstant = explorationConstant  #
+        self.rollout = rolloutPolicy  # rollout方法将在选择的节点上随机执行一种Action
 
+    # 对应模拟
     def search(self, initialState):
-        self.root = treeNode(initialState, None)
-        for i in range(self.searchLimit):
+        self.root = treeNode(initialState, None)  # 第一个是state(进来的是planstate类型的数据),第二个是parent
+        for i in range(self.searchLimit):  # 运行searchLimit次的executeRound
             self.executeRound()
 
         bestChild = self.getBestChild(self.root, 0)
-        return self.getAction(self.root, bestChild)
+        # print(self.getAction(self.root, bestChild))  (26, 6)  (9, 16)...
+        return self.getAction(self.root, bestChild)  # 返回的是
 
+    # 一次模拟流程
     def executeRound(self):
         node = self.selectNode(self.root)
         newState = deepcopy(node.state)
         reward = self.rollout(newState)
         self.backpropogate(node, reward)
 
+    # 节点选择
+    # 该节点若有子节点,则使用getBestChild方法获得UCT值最大的节点
+    # 若无子节点,则使用expand方法扩展子节点
     def selectNode(self, node):
         while not node.isTerminal:
             if node.isFullyExpanded:
@@ -102,6 +108,7 @@ class mcts():
             node.totalReward += reward
             node = node.parent
 
+    # 在n次executeRound执行完后,选择子节点中最优的
     def getBestChild(self, node, explorationValue):
         bestValue = float("-inf")
         bestNodes = []
@@ -115,7 +122,11 @@ class mcts():
                 bestNodes.append(child)
         return random.choice(bestNodes)
 
+    # 从子节点中获取其动作(下到哪里)
     def getAction(self, root, bestChild):
+        # print(root.children)
         for action, node in root.children.items():
             if node is bestChild:
+                # print(action)
+                # print(node)
                 return action
