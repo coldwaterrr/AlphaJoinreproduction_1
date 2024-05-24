@@ -4,7 +4,7 @@ import psycopg2
 
 import numpy as np
 
-querydir = '../resource/jobquery'  # JOB query
+querydir = '../resource/dataset'  # JOB query
 tablenamedir = '../resource/jobtablename'  # tablename involved in the query statement  查询中的表名
 shorttolongpath = '../resource/shorttolong'  # Mapping of table abbreviations to full names 表缩写到全名的映射
 

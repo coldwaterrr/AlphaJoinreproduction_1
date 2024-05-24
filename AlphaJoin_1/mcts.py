@@ -16,7 +16,7 @@ predictionNet.eval()
 def getReward(state):
     inputState = torch.tensor(state.board + state.predicatesEncode, dtype=torch.float32)
     with torch.no_grad():
-        predictionRuntime = predictionNet(inputState)
+        predictionRuntime = predictionNet(inputState)  # 预测完整连接顺序得到的标签
     prediction = predictionRuntime.detach().cpu().numpy()
     maxindex = np.argmax(prediction)
     reward = (5 - maxindex) / 5.0
@@ -30,7 +30,7 @@ def randomPolicy(state):
             action = random.choice(temp)
         except IndexError:
             raise Exception("Non-terminal state has no possible actions: " + str(state))
-        state = state.takeAction(action)
+        state = state.takeAction(action)  # 迭代or递归？
     # reward = state.getReward()
     reward = getReward(state)
     # print(reward)
@@ -94,6 +94,8 @@ class mcts():
             if action not in node.children:
                 newNode = treeNode(node.state.takeAction(action), node)
                 node.children[action] = newNode
+                # print(action)
+                # print(newNode.state)
                 if len(actions) == len(node.children):
                     node.isFullyExpanded = True
                 # if newNode.isTerminal:
@@ -113,8 +115,12 @@ class mcts():
         bestValue = float("-inf")
         bestNodes = []
         for child in node.children.values():
+            # print(child.totalReward)
+            # print(node.numVisits)
+            # print(child.numVisits)
             nodeValue = child.totalReward / child.numVisits + explorationValue * math.sqrt(
                 2 * math.log(node.numVisits) / child.numVisits)
+            # print(nodeValue)
             if nodeValue > bestValue:
                 bestValue = nodeValue
                 bestNodes = [child]

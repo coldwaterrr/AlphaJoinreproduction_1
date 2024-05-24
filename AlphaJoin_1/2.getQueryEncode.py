@@ -4,7 +4,7 @@ import ast
 from getResource import getResource
 import psycopg2
 
-querydir = '../resource/jobquery'  # imdb的查询语句
+querydir = '../resource/dataset'  # imdb的查询语句
 tablenamedir = '../resource/jobtablename'  # 每条语句对应表名的别名(缩写)
 shorttolongpath = '../resource/shorttolong'  # 缩写与全名的映射
 predicatesEncodeDictpath = './predicatesEncodedDict'
@@ -20,6 +20,9 @@ print("connect success")
 with open('shottolong.txt', 'r') as file:
     data = file.readlines()
 # print(type(data))
+
+key_list = []
+
 shorttolong = dict()
 for i in data:
     if i == '\n' or i =='Process finished with exit code 0\n':
@@ -27,7 +30,9 @@ for i in data:
     # print(i)
     i.strip('n')
     i.strip('\\')
-    print(i.split(':')[1])
+    # print(i.split(':')[1])
+    print(i.split(':')[0].replace("'", "").strip(' '))
+    key_list.append(i.split(':')[0].replace("'", "").strip(' '))
     shorttolong[i.split(':')[0].replace("'", "").strip(' ')] = i.split(':')[1].replace("'", "").strip(' ').replace("\n","")
 # print(shorttolong['mc'])
 # print(shorttolong)
@@ -52,6 +57,7 @@ def getQueryAttributions():
 
 
     for queryName in fileList:
+        print(queryName)
         querypath = querydir + "/" + queryName
         file_object = open(querypath)
         file_context = file_object.readlines()  # 获取query语句
@@ -77,9 +83,13 @@ def getQueryAttributions():
                     if word[-1] == ';':  # object[:5]没有Start表示从头开始取,步长为1，object[5:]表示从5开始到尾，步长为1
                         word = word[:-1]
 
+                    if word.split('.')[0] not in key_list:
+                        continue
+
                     short_tablename = word.split('.')[0]
                     column = word.split('.')[1]
                     # print(type(column))
+                    print(short_tablename)
                     long_tablename = shorttolong[short_tablename]
                     # print(long_tablename)
                     # selectivity[word] = s_value
@@ -163,9 +173,9 @@ def getQueryAttributions():
 
 
 def getQueryEncode(attrNames):
-    print(attrNames)
-    print(len(attrNames))
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+    # print(attrNames)
+    # print(len(attrNames))
+    # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     # Read all table abbreviations
     # 读取所有表格缩写
     f = open(shorttolongpath, 'r')
@@ -194,17 +204,37 @@ def getQueryEncode(attrNames):
         int_to_attr[i] = attrNames[i]
         attr_to_int[attrNames[i]] = i
     # print(table_to_int)
-    print('attr_to_int')
-    print(attr_to_int)
+    # print('attr_to_int')
+    # print(attr_to_int)
     queryEncodeDict = {}
     joinEncodeDict = {}
     predicatesEncodeDict = {}
     fileList = os.listdir(querydir)
     fileList.sort()
 
+    # 算子编码预处理
+    operator = {}
+    operator_path = '../resource/distinct_runtim_operator'
+    f = open(operator_path)
+    rows = f.readlines()
+    for line in rows:
+        operator[line.split(',')[0]] = line.split(',')[9].split('\t')[2].split(':')[0]
+    f.close()
+    print(operator)
+
     for queryName in fileList:
         joinEncode = [0 for _ in range(len(tableNames) * len(tableNames))]
         predicatesEncode = [0 for _ in range(len(attrNames))]
+
+        # 算子编码信息
+        if operator[queryName.split('.')[0]] == '0':
+            op = [0, 0, 0]
+        elif operator[queryName.split('.')[0]] == '1':
+            op = [0, 0, 1]
+        elif operator[queryName.split('.')[0]] == '2':
+            op = [0, 1, 0]
+        elif operator[queryName.split('.')[0]] == '3':
+            op = [0, 1, 1]
 
         # Read query statement
         # 读取查询语句
@@ -240,7 +270,10 @@ def getQueryEncode(attrNames):
                                 word = word[1:]
                             if word[-1] == ';':
                                 word = word[:-1]
+                            if word.split('.')[0] not in key_list:
+                                continue
                             predicatesEncode[attr_to_int[word]] = selectivity[word]
+                            # predicatesEncode = predicatesEncode
             else:
                 for word in temp:
                     if '.' in word:
@@ -250,9 +283,11 @@ def getQueryEncode(attrNames):
                             word = word[1:]
                         if word[-1] == ';':
                             word = word[:-1]
+                        if word.split('.')[0] not in key_list:
+                            continue
                         predicatesEncode[attr_to_int[word]] = selectivity[word]
-        predicatesEncodeDict[queryName[:-4]] = predicatesEncode
-        queryEncodeDict[queryName[:-4]] = joinEncode + predicatesEncode
+        predicatesEncodeDict[queryName[:-4]] = predicatesEncode + op
+        queryEncodeDict[queryName[:-4]] = joinEncode + predicatesEncode + op
 
     for i in queryEncodeDict.items():
         print(i)

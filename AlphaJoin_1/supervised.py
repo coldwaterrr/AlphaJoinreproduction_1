@@ -143,7 +143,7 @@ class supervised:
             # print(self.num_output)
         for i in range(int(self.dataList.__len__() * 0.3)):
             index = random.randint(0, len(self.dataList) - 1)
-            temp = self.dataList.pop(index)
+            temp = self.dataList.pop(index)  # 分出去了
             self.testList.append(temp)
 
         print("size of test set:", len(self.testList), "\tsize of train set:", len(self.dataList))
