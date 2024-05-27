@@ -14,10 +14,12 @@ predicatesEncodeDictPath = './predicatesEncodedDict'
 
 
 class data:
-    def __init__(self, state, time):
+    def __init__(self, queryname, state, time):
+        self.queryname = queryname
         self.state = state
         self.time = time
         self.label = 0
+        # self.operaotor = operator
 
 
 class supervised:
@@ -50,7 +52,7 @@ class supervised:
 
         # The dimension of the network input vector
         # 网络输入向量的维度
-        self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["1a"])  # predicatesEncodeDict[queryname] 长度统一为 72
+        self.num_inputs = len(tables) * len(tables) + len(self.predicatesEncodeDict["00000"])  # predicatesEncodeDict[queryname] 长度统一为 72+3
         # The dimension of the vector output by the network
         # 网络输出向量的维度
         self.num_output = 6
@@ -59,7 +61,7 @@ class supervised:
 
         # build up the network
         # 建立网络
-        self.value_net = ValueNet(self.num_inputs, self.num_output)  # 值网络  普通神经网络
+        self.value_net = ValueNet(self.num_inputs, self.num_output*4)  # 值网络  普通神经网络
         # self.value_net = ResNet(self.num_inputs, self.num_output)  # ResNet
         # self.actor_net = ValueNet(self.num_inputs, self.num_output)  # 动作网络？有啥区别
         if self.args.cuda:
@@ -93,13 +95,13 @@ class supervised:
                 a.sort()
                 indexb = self.table_to_int[b[0]]
                 indexa = self.table_to_int[a[0]]
-                print('indexb:'+b[0], end=' ')
-                print(indexb)
-                print('indexa:'+a[0], end='  ')
-                print(indexa)
-                print(len(tablesInQuery))
-                print(difference)
-                print(tablesInQuery)
+                # print('indexb:'+b[0], end=' ')
+                # print(indexb)
+                # print('indexa:'+a[0], end='  ')
+                # print(indexa)
+                # print(len(tablesInQuery))
+                # print(difference)
+                # print(tablesInQuery)
                 matrix[indexa, indexb] = (len(tablesInQuery) + 2) / 3 - difference  # indexa和indexb是横坐标和纵坐标
                 difference += 1
                 stack.append(tempa + '+' + tempb)
@@ -114,31 +116,54 @@ class supervised:
         # 统一加载数据并随机选择进行训练
         file_test = open(path)
         line = file_test.readline()
+        operator = {}
         while line:
             queryName = line.split(",")[0].encode('utf-8').decode('utf-8-sig').strip()  # strip默认去头尾多余空格
             hint = line.split(",")[1]  # ( ( ( ( ( mc ( ci rt ) ) cn ) t ) chn ) ct )
             matrix = self.hint2matrix(hint)  # 变成paper图一右边的图
             predicatesEncode = self.predicatesEncodeDict[queryName]
-            print(queryName, end="\t\t")
+            # print(queryName, end="\t\t")
             # print(type(queryName), end='\t')
-            print(predicatesEncode, end="\t")
-            print(len(predicatesEncode))
+            # print(predicatesEncode, end="\t")
+            # print(len(predicatesEncode))
             state = matrix.flatten().tolist()[0]
             state = state + predicatesEncode
-            print(state)
+            # print(state)
             runtime = line.split(",")[2].strip()
+
+            print(line.split(",")[3].split('\n')[0])
+            # print(type(line.split(",")[3]))
+            if line.split(",")[3].split('\n')[0] == "0":
+                op = "no_restrict"
+                operator[queryName] = 0
+            elif line.split(",")[3].split('\n')[0] == "1":
+                op = "no_hash"
+                operator[queryName] = 1
+            elif line.split(",")[3].split('\n')[0] == "2":
+                op = "no_merge"
+                operator[queryName] = 2
+            elif line.split(",")[3].split('\n')[0] == "3":
+                op = "nestloop"
+                operator[queryName] = 3
+
             if runtime == 'timeout':
                 runtime = 'timeout'  # Depends on your settings
             else:
                 runtime = int(float(runtime))
-            temp = data(state, runtime)
+            # print(type(queryName))
+            temp = data(queryName, state, runtime)
             self.dataList.append(temp)
+            # print(type(self.dataList[0].queryname))
             line = file_test.readline()
 
         self.dataList.sort(key=lambda x: x.time, reverse=False)
+        print(operator)
         for i in range(self.dataList.__len__()):
-            self.dataList[i].label = int(i / (self.dataList.__len__() / self.num_output + 1))
-            # print(self.dataList[i].label)
+            # print(operator['03803'])
+            self.dataList[i].label = (int(i / (self.dataList.__len__() / self.num_output + 1))+1) * 4 - int(operator[self.dataList[i].queryname])-1
+            # print(self.dataList[i].queryname)
+            # print(operator[])
+            print(self.dataList[i].label)
             # print(self.dataList.__len__())
             # print(self.num_output)
         for i in range(int(self.dataList.__len__() * 0.3)):
@@ -177,7 +202,7 @@ class supervised:
         loss_y = []
         correct_y = []
         epoch = []
-        for step in range(1, 300001):
+        for step in range(1, 500001):
             index = random.randint(0, len(self.dataList) - 1)
             state = self.dataList[index].state
             state_tensor = torch.tensor(state, dtype=torch.float32)
@@ -202,14 +227,14 @@ class supervised:
                 # self.test_network() ??
                 # print('[{}]  Epoch: {}, Loss: {:.5f}'.format(datetime.now(), step, loss1000))
             if step % 1000 == 0:
-                torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_k6_new.pt')
+                torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_op.pt')
                 loss_y.append(loss1000)
                 loss1000 = 0
                 correct_y.append(self.test_network())
                 epoch.append(step)
                 if self.test_network() > max_correct:
                     max_correct = self.test_network()
-                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best_k6_new.pt')
+                    torch.save(self.value_net.state_dict(), self.args.save_dir + 'supervised_best_op.pt')
 
         # 绘制折线图
         plt.figure(figsize=(8, 5))
@@ -220,7 +245,7 @@ class supervised:
         plt.xlabel("epoch")
         plt.ylabel("Accuracy")
         plt.title("epoch-accuracy")
-        plt.savefig('accuracy_300000_6标签_new.png')
+        plt.savefig('accuracy_300000_op.png')
         # plt.show()
 
         plt.plot(epoch, loss_y)
@@ -229,7 +254,7 @@ class supervised:
         plt.xlabel("epoch")
         plt.ylabel("loss")
         plt.title("epoch-loss")
-        plt.savefig('loss_300000_6标签_new.png')
+        plt.savefig('loss_300000_op.png')
         # plt.show()
 
     # functions to test the network
@@ -237,7 +262,7 @@ class supervised:
     def test_network(self):
         device = torch.device("cuda:0")
         self.load_data()
-        model_path = self.args.save_dir + 'supervised_best_k6_new.pt'
+        model_path = self.args.save_dir + 'supervised_best_op.pt'
         # self.actor_net = self.value_net(self.num_inputs, self.num_output)
         self.value_net.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
         self.value_net.eval()
@@ -255,6 +280,8 @@ class supervised:
             # print(maxindex, "\t", label)
             if maxindex == label:
                 correct += 1
+            # elif maxindex/4 == label/4:
+            #     correct += 0.8
         print(correct, self.testList.__len__(), correct / self.testList.__len__(), end=' ')
 
         correct1 = 0
@@ -270,6 +297,8 @@ class supervised:
             # print(maxindex, "\t", label)
             if maxindex == label:
                 correct1 += 1
+            # elif maxindex/4 == label/4:
+            #     correct1 += 0.8
         print(correct1, self.dataList.__len__(), correct1 / self.dataList.__len__())
         self.right = correct / self.testList.__len__()
         return correct / self.testList.__len__()

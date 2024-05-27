@@ -11,7 +11,7 @@ if __name__ == '__main__':
     trainer = supervised(args)
     print("Pretreatment running...")
     start = time.clock()
-    trainer.pretreatment("runtime_laptop")
+    trainer.pretreatment("runtime_op")
     # trainer.pretreatment("runtime_laptop")
     elapsed = (time.clock() - start)
     print("Pretreatment time used:", elapsed)
