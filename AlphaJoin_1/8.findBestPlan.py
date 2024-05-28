@@ -147,7 +147,7 @@ def findBestPlan():
         file_context = file_object.read()
         tableList = eval(file_context)
         file_object.close()
-        print(len(tableList))
+        # print(len(tableList))
 
         # Construct the initial state
         # 构建初始状态
@@ -167,9 +167,19 @@ def findBestPlan():
             mct.searchLimit = (int)(len(currentState.getPossibleActions()) * searchFactor)
             # print(currentState.currentStep)
         elapsed = (time.time() - start) * 1000
+        # print(currentState.predicatesEncode)
+        # print(currentState.predicatesEncode[-3:])
+        if currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 0 and currentState.predicatesEncode[-3:][2] == 0:
+            operator = "no_restrict"
+        elif currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 0 and currentState.predicatesEncode[-3:][2] == 1:
+            operator = "no_hash"
+        elif currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 1 and currentState.predicatesEncode[-3:][2] == 0:
+            operator = "no_merge"
+        elif currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 1 and currentState.predicatesEncode[-3:][2] == 1:
+            operator = "nestloop"
         # Decode selected results
         hint = decode(currentState, tableList)
-        print(queryName, ",", hint, ",%.3f" % (elapsed))
+        print(queryName, ",", hint, ",%.3f" % (elapsed), ",", operator)
 
 if __name__ == '__main__':
     findBestPlan()

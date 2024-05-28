@@ -8,10 +8,10 @@ class ValueNet(nn.Module):
         super(ValueNet, self).__init__()
         self.dim = in_dim
         self.layer1 = nn.Sequential(nn.Linear(in_dim, 2048), nn.ReLU(True))
-        self.layer2 = nn.Sequential(nn.Linear(2048, 512), nn.ReLU(True))
-        self.layer3 = nn.Sequential(nn.Linear(512, 128), nn.ReLU(True))
-        self.layer4 = nn.Sequential(nn.Linear(128, 32), nn.ReLU(True))
-        self.layer5 = nn.Sequential(nn.Linear(32, out_dim), nn.Softmax(dim = 0))
+        self.layer2 = nn.Sequential(nn.Linear(2048, 1024), nn.ReLU(True))
+        self.layer3 = nn.Sequential(nn.Linear(1024, 512), nn.ReLU(True))
+        self.layer4 = nn.Sequential(nn.Linear(512, 128), nn.ReLU(True))
+        self.layer5 = nn.Sequential(nn.Linear(128, out_dim), nn.Softmax(dim = 0))
         # self.layer5 = nn.Sequential(nn.Linear(32, out_dim), nn.ReLU(True))
     
     def forward(self, x):
