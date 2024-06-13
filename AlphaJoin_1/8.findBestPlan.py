@@ -175,7 +175,7 @@ def findBestPlan():
             operator = "no_hash"
         elif currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 1 and currentState.predicatesEncode[-3:][2] == 0:
             operator = "no_merge"
-        elif currentState.predicatesEncode[-3:][0] == 0 and currentState.predicatesEncode[-3:][1] == 1 and currentState.predicatesEncode[-3:][2] == 1:
+        elif currentState.predicatesEncode[-3:][0] == 1 and currentState.predicatesEncode[-3:][1] == 0 and currentState.predicatesEncode[-3:][2] == 0:
             operator = "nestloop"
         # Decode selected results
         hint = decode(currentState, tableList)

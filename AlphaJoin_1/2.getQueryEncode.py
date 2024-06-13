@@ -234,7 +234,7 @@ def getQueryEncode(attrNames):
         elif operator[queryName.split('.')[0]] == '2':
             op = [0, 1, 0]
         elif operator[queryName.split('.')[0]] == '3':
-            op = [0, 1, 1]
+            op = [1, 0, 0]
 
         # Read query statement
         # 读取查询语句

@@ -7,4 +7,3 @@ if __name__ == '__main__':
     trainer = supervised(args)
     trainer.supervised()
     trainer.test_network()
-
