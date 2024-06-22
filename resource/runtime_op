@@ -1,0 +1,615 @@
+00000,( ( ( ( ( ( ( ( ( ( ( cn mc ) t ) mk ) k ) ci ) n ) chn ) rt ) an ) mi ) it ),6732.60,0
+00001,( ( ( ( ( ( ( ( ( ( ( cn mc ) t ) mi ) mk ) k ) it ) ci ) chn ) an ) rt ) n ),6732.17,1
+00201,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) chn ) t ) mc ) cn ) mi ) it ),83305.88,0
+00210,( ( ( ( ( ( ( ( ( n an ) ci ) chn ) t ) mc ) cn ) mi ) it ) rt ),83305.02,0
+00228,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) t ) mc ) cn ) mi ) chn ) it ),110486.44,0
+00236,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) t ) mc ) cn ) mi ) it ) chn ),110810.58,0
+00281,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) t ) mc ) cn ) chn ) mi ) it ),111060.19,0
+00401,( ( ( ( k mk ) t ) ci ) n ),16581.05,0
+00601,( ( ( ( ( ( ( ( ( ( cc cct1 ) t ) kt ) mi ) mk ) mc ) cn ) ct ) it1 ) k ),3859.16,0
+00642,( ( ( ( ( ( ( ( ( ( cc cct1 ) t ) kt ) mc ) cn ) ct ) mi ) it1 ) mk ) k ),3846.69,0
+00800,( ( ( ( ( ( ( k mk ) t ) mi ) it1 ) mi_idx ) it2 ) kt ),5042.57,0
+01000,( ( ( ( ( ( ( ( lt ml ) t ) mc ) ct ) cn ) mk ) k ) mi ),463.12,0
+01053,( ( ( ( ( ( ( ( lt ml ) t ) mc ) ct ) cn ) mi ) mk ) k ),462.12,0
+01055,( ( ( ( ( ( ( ( lt ml ) t ) mc ) ct ) cn ) mk ) mi ) k ),450.98,0
+01200,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) k ) ci ) chn ) n ) mi_idx ) it2 ),2482.30,0
+01205,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) n ) mi_idx ) it2 ) chn ) mk ) k ) kt ),2489.11,0
+01209,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) k ) mi_idx ) it2 ) ci ) n ) chn ),2488.20,0
+01210,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) t ) kt ) mk ) k ) ci ) chn ) n ),2482.26,0
+01211,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) k ) kt ) ci ) chn ) n ) mi_idx ) it2 ),2482.24,0
+01212,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) kt ) mi_idx ) it2 ) k ) ci ) chn ) n ),2482.00,0
+01214,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) t ) kt ) mk ) k ) ci ) chn ) n ) it2 ),2482.19,0
+01216,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) t ) kt ) it2 ) mk ) k ) ci ) chn ) n ),2482.18,0
+01218,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mi_idx ) it2 ) mk ) k ) ci ) n ) chn ),2488.44,0
+01219,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) k ) kt ) mi_idx ) it2 ) ci ) chn ) n ),2482.27,0
+01223,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) k ) ci ) chn ) n ) kt ) mi_idx ) it2 ),2482.25,0
+01225,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mi_idx ) it2 ) ci ) n ) chn ) mk ) k ),2492.73,0
+01241,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) chn ) n ) mi_idx ) it2 ) mk ) k ) kt ),2482.68,0
+01261,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) n ) kt ) mk ) chn ) mi_idx ) it2 ) k ),2484.87,0
+01264,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) k ) mi_idx ) it2 ) ci ) chn ) n ),2482.27,0
+01400,( ( ( ( ( ( ( ( miidx it ) t ) kt ) mc ) ct ) cn ) mi ) it2 ),19300.57,0
+01601,( ( ( ( ( ( ( ( k mk ) t ) ci ) mi ) it1 ) mi_idx ) it2 ) n ),9438.49,0
+01800,( ( ( ( ( ( kt ( ( it2 ( ( k mk ) mi_idx ) ) t ) ) mc ) cn ) ct ) mi ) it1 ),7695.90,0
+01825,( ( ( ( ( ( ( ( ( ( k mk ) t ) kt ) mc ) cn ) ct ) mi ) it1 ) mi_idx ) it2 ),7689.70,0
+02000,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) cn ) ct ) mk ) k ) t ) kt ) mi ) it1 ) cct2 ),3171.49,0
+02017,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) mc ) cn ) ct ) mk ) k ) mi ) it1 ) kt ),3158.96,0
+02021,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) t ) kt ) mi ) it1 ) mk ) k ) mc ) cn ) ct ) cct2 ),3151.66,0
+02022,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) kt ) mi ) it1 ) mk ) k ) mc ) ct ) cn ),3152.47,0
+02023,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) mc ) ct ) cn ) mi ) mk ) it1 ) k ) kt ),3159.11,0
+02046,( ( ( ( ( ( ( ( ( ( it2 ( ( ( cc cct1 ) cct2 ) mi_idx ) ) t ) kt ) mk ) k ) mc ) ct ) mi ) it1 ) cn ),3167.08,0
+02062,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) t ) kt ) mi ) it1 ) mk ) k ) cn ) cct2 ) ct ),3156.09,0
+02111,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) cn ) cct2 ) mi ) it1 ) ct ) t ) kt ) mk ) k ),3167.05,0
+02120,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) ct ) cct2 ) cn ) t ) kt ) mi ) it1 ) mk ) k ),3157.08,2
+02143,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) t ) kt ) mk ) mc ) ct ) k ) cct2 ) cn ) mi ) it1 ),3151.32,0
+02144,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) t ) kt ) mi ) cct2 ) mk ) k ) it1 ) mc ) cn ) ct ),3151.77,0
+02168,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) kt ) mk ) k ) mi ) it1 ) mc ) cn ) ct ),3152.02,0
+02202,( ( it ( ( k mk ) mi_idx ) ) t ),17155.36,0
+02208,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) kt ) mk ) k ) mc ) ct ) cn ) mi ) it1 ),3151.93,0
+02400,( ( ( ( ( ( mc cn ) t ) ct ) ci ) chn ) rt ),338050.25,0
+02407,( ( ( ( ( ( mc cn ) t ) ci ) chn ) ct ) rt ),97643.87,0
+02600,( ( ( ( k mk ) mc ) cn ) t ),3942.00,0
+02731,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) ct ) cn ) mi ) it1 ) t ) kt ) cct2 ) mk ) k ),3167.18,0
+02800,( ( ( ( mi_idx it ) mc ) ct ) t ),19828.35,0
+02870,( ( ( ( mi_idx it ) t ) mc ) ct ),19824.56,0
+03001,( ( ( ( ( ( ( lt ml ) t ) mc ) ct ) cn ) mk ) k ),461.10,0
+03401,( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) an ) chn ) mi ) it ) t ) mc ) pi ) ) cn ) n ) mk ) k ) rt ),3134.23,0
+03403,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) ci ) chn ) an ) rt ) mc ) n ) mk ) k ) it ) t ) pi ) it3 ) cn ),4102.82,0
+03404,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi ) ci ) pi ) chn ) it ) it3 ) mk ) k ) mc ) cn ) rt ) an ) n ),2925.16,0
+03405,( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( k mk ) t ) ci ) n ) mc ) cn ) cc ) cct1 ) cct2 ) rt ) mi ) pi ) ) it ) an ) chn ),4336.06,0
+03406,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) t ) ci ) rt ) n ) an ) cn ) chn ) mi ) it ) mk ) k ) pi ) it3 ),2927.02,0
+03423,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mk ) k ) ci ) chn ) rt ) mi ) it ) t ) n ) mc ) cn ) an ) pi ) it3 ),3503.84,0
+03424,( ( it ( ( ( ( ( ( ( ( ( ( ( ( ( ( k mk ) t ) ci ) n ) pi ) an ) it3 ) rt ) cc ) cct1 ) chn ) mc ) cn ) mi ) ) cct2 ),4336.42,0
+03444,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) it ) ci ) n ) rt ) pi ) it3 ) chn ) mk ) k ) an ) mc ) cn ) t ),3413.72,2
+03452,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi ) ci ) chn ) rt ) an ) n ) mk ) k ) it ) mc ) cn ) pi ) it3 ),2842.95,0
+03457,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) cn ) ci ) n ) chn ) t ) an ) mi ) rt ) pi ) it3 ) mk ) k ) it ),3113.11,2
+03461,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) pi ) chn ) rt ) an ) t ) mk ) k ) it3 ) mi ) it ) n ) mc ) cn ),4033.22,0
+03477,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) an ) chn ) n ) pi ) it3 ) t ) mk ) k ) mc ) cn ) mi ) it ),2839.39,2
+03505,( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mk ) k ) mi ) it ) ci ) an ) chn ) rt ) mc ) cn ) pi ) ) n ),2838.91,0
+03518,( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( k mk ) t ) ci ) rt ) mi ) cc ) n ) it ) mc ) cn ) pi ) ) cct2 ) cct1 ) chn ) an ),3143.75,2
+03528,( it ( ( ( k mk ) t ) mi_idx ) ),17165.73,0
+03552,( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) mk ) k ) mc ) mi ) it ) chn ) an ) pi ) ) t ) cn ) n ),3481.49,0
+03569,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) chn ) n ) mk ) mi_idx ) it2 ) kt ) k ),2484.77,0
+03604,( ( ( ( ( k mk ) ml ) lt ) t1 ) t2 ),3911.58,0
+03801,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) cct1 ) mk ) k ) mc ) cn ) ct ) mi ),306.55,3
+03802,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mc ) ct ) cn ) mk ) k ) mi ) cct1 ),307.78,2
+03803,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) cct1 ) t ) k ) mc ) cn ) ct ) mi ),286.84,0
+03805,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mc ) ct ) cn ) mi ) mk ) k ),294.86,2
+03806,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mi ) mc ) cn ) ct ) mk ) k ),306.84,2
+03808,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) t ) mk ) k ) mi ) cct2 ),306.76,0
+03809,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) mk ) k ) cct2 ) mi ) ct ) t ),306.55,3
+03811,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) cn ) ct ) mi ) mk ) k ) t ),286.19,1
+03812,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) cct2 ) t ) mc ) ct ) cn ) mi ),306.55,0
+03816,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mk ) k ) mi ) mc ) ct ) cn ),307.86,0
+03817,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mc ) ct ) cn ) t ) mi ) mk ) k ),307.45,0
+03819,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) cct2 ) mc ) ct ) cn ) mi ),306.85,0
+03824,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mi ) mc ) ct ) cn ) mk ) k ),307.71,1
+03825,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) t ) ct ) cn ) mi ) mk ) k ) cct2 ),306.55,1
+03827,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) ct ) cn ) mi ) t ) mk ) k ),314.47,0
+03832,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) ct ) cct1 ) mk ) k ) mi ) t ),306.55,1
+03839,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mk ) k ) mi ) t ) cct2 ),306.65,3
+03841,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) cct1 ) mc ) ct ) mk ) k ) mi ) cn ),306.55,3
+03843,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) t ) cct2 ) mk ) k ) mi ),306.76,0
+03848,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mk ) k ) mc ) ct ) cn ) mi ),306.76,2
+03849,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) cn ) mi ) mk ) k ) t ) ct ),307.86,2
+03851,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) ct ) cn ) mi ) mk ) k ) t ),306.55,2
+03852,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) mc ) ct ) cn ) t ) cct2 ) mk ) k ) mi ) cct1 ),287.44,1
+03859,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) cct1 ) mc ) ct ) cn ) t ) mi ),306.55,0
+03861,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mi ) t ) mk ) k ) mc ) ct ) cn ),307.70,1
+03863,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cct2 ) cn ) mk ) k ) t ) mi ),306.74,0
+03865,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) ct ) t ) cct2 ) mk ) k ) mi ),306.55,1
+03876,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) cn ) mk ) k ) mi ) t ) ct ),306.55,2
+03877,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) mi ) mc ) ct ) cct1 ) cn ),307.45,2
+03878,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) mi ) mc ) ct ) cn ) t ),286.08,3
+03884,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) mi ) cct2 ) mc ) cn ) ct ),286.70,2
+03887,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) ct ) cn ) mk ) k ) t ) cct1 ) mi ),306.77,0
+03895,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) cct1 ) t ) mi ) mc ) ct ) cn ),306.55,0
+03898,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) mi ) mc ) cn ) cct2 ) ct ),292.63,3
+03906,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) ct ) mi ) mk ) cct1 ) t ) k ) cn ),286.88,0
+03912,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) t ) mi ) k ) mc ) ct ) cn ),310.71,1
+03917,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) cct2 ) mc ) cn ) ct ) mi ) k ) t ),289.43,0
+03920,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mc ) cn ) mk ) ct ) mi ) cct1 ) k ),288.12,0
+03922,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) t ) mc ) cn ) mi ) ct ),307.61,0
+03928,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) mc ) ct ) mk ) t ) k ) cct2 ) cn ),308.21,3
+03935,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) cct2 ) mc ) cn ) ct ) t ) mk ) k ),310.71,2
+03941,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mk ) k ) mi ) mc ) cn ) ct ),307.17,1
+03945,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) mi ) mc ) cn ) ct ) t ),289.83,2
+03947,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) t ) mi ) cct2 ) mk ) k ),306.65,3
+03966,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) mi ) mc ) ct ) cn ) cct2 ) t ),306.55,0
+03970,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mc ) ct ) mk ) k ) mi ) cn ),306.55,1
+03982,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) cn ) ct ) cct2 ) mk ) k ) mi ),308.76,0
+03990,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) mi ) cct2 ) mc ) cn ) ct ),308.21,3
+03999,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) mc ) ct ) cct2 ) k ) cn ) t ) mi ),306.67,1
+04000,( ( ( ( ( ( ( k mk ) mc ) cn ) t ) ci ) n ) an ),4102.39,0
+04017,( ( ( ( ( ( ( k mk ) mc ) cn ) ci ) n ) an ) t ),3944.88,0
+04037,( ( ( ( ( ( ( k mk ) t ) mc ) cn ) ci ) n ) an ),5976.63,0
+04523,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) mc ) t ) ct ) cn ) mi ),307.43,0
+04602,( ( ( ( ( ( ( an n ) ci ) rt ) chn ) t ) mc ) cn ),170094.30,0
+04802,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi_idx ) it2 ) ci ) n ) mk ) k ) mi ) it1 ),2718.10,0
+04817,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi_idx ) it2 ) ci ) mk ) k ) n ) mi ) it1 ),2713.34,0
+04818,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) ci ) mi ) it1 ) mk ) k ) n ),2717.84,0
+04825,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) mi ) t ) it1 ) ci ) n ) mk ) k ),2703.77,0
+04852,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) mk ) k ) mi ) it1 ) ci ) n ),2717.52,0
+05269,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mi ) mk ) k ) cct2 ) t ),306.55,3
+05292,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) mk ) k ) mi ) t ) ct ) cct2 ),306.55,2
+05400,( ( ( ( mc ct ) t ) mi ) it ),55471.41,0
+05424,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) cct2 ) t ) mc ) ct ) cn ) mk ) k ),307.19,1
+05617,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) cct1 ) mk ) k ) t ) mc ) cn ) ct ),307.21,1
+05800,( ( ( ( ( ( ( ( ( ( k mk ) mi_idx ) it2 ) mc ) cn ) ci ) mi ) it1 ) n ) t ),11221.06,0
+06078,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mk ) k ) mi ) mc ) cn ) ct ),286.89,3
+06200,( ( ( ( ( ( mi it1 ) mi_idx ) it2 ) ci ) n ) t ),403223.53,0
+06204,( ( ( ( ( ( mi it1 ) mi_idx ) it2 ) t ) ci ) n ),403083.02,0
+06352,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cct2 ) cn ) mi ) ct ) t ) mk ) k ),306.76,2
+06403,( ( ( ( ( ( ( ml lt ) t ) ci ) n ) pi ) an ) it ),4896.70,0
+06540,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) t ) mk ) cct2 ) cn ) k ) mi ),286.41,0
+06615,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) mi ) it1 ) mk ) k ) ci ) n ),2688.28,0
+06616,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) mi ) t ) ci ) n ) mk ) k ) it1 ),2688.57,0
+06624,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mi_idx ) it2 ) mk ) k ) mi ) it1 ) ci ) n ),2696.41,0
+06635,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) mi ) t ) it1 ) mk ) k ) ci ) n ),2688.45,0
+06636,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi_idx ) it2 ) mk ) k ) mi ) it1 ) ci ) n ),2696.40,0
+06656,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) ci ) n ) mi ) it1 ) mk ) k ),2688.32,0
+06680,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mi_idx ) it2 ) mk ) k ) ci ) n ) mi ) it1 ),2688.14,2
+06681,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) mi ) it1 ) t ) mk ) k ) ci ) n ),2688.45,0
+06691,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) mi ) it1 ) ci ) n ) mk ) k ),2688.33,0
+06693,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) mi ) it1 ) t ) ci ) n ) mk ) k ),2688.53,0
+06781,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) mk ) k ) mi ) ci ) n ) it1 ),2688.20,0
+06796,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) t ) ci ) mk ) k ) mi ) it1 ) n ),2688.23,0
+06797,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) mi ) mk ) k ) ci ) n ) it1 ),2688.24,0
+06813,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) mc ) cn ) ct ) mk ) cct1 ) t ) k ),295.60,0
+06848,( ( ( ( k mk ) t ) mc ) cn ),3958.77,0
+07001,( ( ( ( ( ( ( lt ml ) t ) mk ) mc ) cn ) ct ) k ),445.74,0
+07075,( ( ( ( ( ( ( lt ml ) t ) mc ) cn ) ct ) mk ) k ),447.53,0
+07401,( ( ( ( ( ( ( ( ( ci rt ) n ) t ) chn ) mi ) it ) mc ) cn ) an ),579322.51,0
+07601,( ( ( ( ( ( k mk ) t ) ci ) n ) mc ) cn ),4789.29,0
+07607,( ( ( ( ( ( k mk ) ci ) n ) t ) mc ) cn ),4715.38,0
+08006,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) chn ) an ) rt ) mc ) mi ) mk ) k ) cn ) pi ) n ) it ) it3 ) t ),2879.56,2
+08007,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) rt ) an ) mi ) it ) n ) mc ) cn ) mk ) k ) pi ) it3 ) chn ),3023.13,0
+08008,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mk ) k ) ci ) pi ) chn ) rt ) mi ) it ) t ) it3 ) n ) mc ) cn ) an ),3713.05,0
+08009,( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) mi ) it ) chn ) an ) pi ) ) mc ) cn ) n ) t ) mk ) k ),2879.56,2
+08011,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) ci ) chn ) pi ) mk ) rt ) k ) an ) mc ) cn ) n ) it3 ) t ) it ),2841.82,2
+08035,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) n ) rt ) chn ) mc ) cn ) an ) mk ) k ) pi ) it3 ) mi ) it ),2838.26,0
+08040,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) t ) mk ) ci ) n ) rt ) an ) mi ) chn ) k ) cn ) it ) pi ) it3 ),3001.18,0
+08066,( ( ( ( it3 ( ( ( ( ( ( ( it ( ( ( ( ( k mk ) t ) cc ) cct2 ) mi ) ) ci ) n ) chn ) rt ) mc ) pi ) ) cn ) an ) cct1 ),4336.73,0
+08196,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) cn ) ct ) mk ) k ) cct2 ) mi ),308.98,0
+08276,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) ct ) mi ) mk ) k ) cct2 ) t ),307.35,2
+08401,( ( ( ( ( ( ( ( mc cn ) at ) t ) mi ) it1 ) ct ) mk ) k ),69983.11,0
+08403,( ( ( ( ( ( ( ( mc cn ) at ) t ) mi ) ct ) it1 ) mk ) k ),68194.53,0
+08597,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) mk ) ct ) cct2 ) t ) k ) mi ),286.81,0
+08802,( ( ( ( ( ( ( ( cn mc ) at ) ct ) mi ) it1 ) t ) mk ) k ),6478.17,0
+08803,( ( ( ( ( ( ( ( cn mc ) at ) ct ) t ) mi ) it1 ) mk ) k ),6477.75,0
+09002,( ( ( ( ( ( ( ci rt ) n ) chn ) t ) mc ) cn ) an ),491154.46,0
+09600,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t2 ) mc1 ) kt2 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) it2 ) t1 ) kt1 ),1535.86,2
+09603,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) t1 ) kt1 ) mc1 ) cn1 ) mi_idx2 ) mc2 ) cn2 ) t2 ) kt2 ),1494.86,0
+09605,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) mc1 ) cn1 ) t1 ) kt1 ) t2 ) mc2 ) cn2 ) kt2 ),1532.27,0
+09609,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) t1 ) kt1 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) mi_idx1 ),1523.57,0
+09615,( ( ( ( ( ( ( ( it2 ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) ) mi_idx2 ) mc1 ) cn1 ) t2 ) kt2 ) mc2 ) cn2 ),1513.39,0
+09621,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) t1 ) kt1 ) mc2 ) cn2 ) mi_idx1 ) kt2 ) mc1 ) cn1 ) it1 ),1503.91,0
+09622,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) mi_idx2 ) mc1 ) cn1 ) t2 ) kt2 ) t1 ) kt1 ) mc2 ) cn2 ),1507.89,0
+09626,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) t2 ) kt2 ),1497.81,0
+09628,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) mi_idx1 ) mc1 ) cn1 ) t1 ) t2 ) kt2 ) mc2 ) cn2 ) kt1 ),1503.24,2
+09629,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t2 ) kt2 ) t1 ) kt1 ) mi_idx1 ) mc1 ) cn1 ) mc2 ) cn2 ),1508.82,0
+09631,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it2 it1 ) ) mi_idx1 ) mc2 ) cn2 ) t2 ) kt2 ) t1 ) kt1 ) mc1 ) cn1 ),1510.94,0
+09639,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) t1 ) kt1 ),1532.15,0
+09642,( ( ( ( ( ( ( it1 ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) kt2 ) t1 ) ) kt1 ) mi_idx1 ) mc1 ) cn1 ) mc2 ) cn2 ),1509.38,0
+09648,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) kt2 ) t1 ) mc1 ) cn1 ) mc2 ) cn2 ) kt1 ),1502.00,2
+09650,( ( ( ( it2 ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) mc2 ) cn2 ) t2 ) kt2 ) ) mi_idx2 ) mc1 ) cn1 ),1522.26,0
+09651,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t1 ) mi_idx2 ) mc1 ) cn1 ) mc2 ) cn2 ) t2 ) kt2 ) kt1 ),1516.77,0
+09654,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) mi_idx1 ) t1 ) kt1 ) mc1 ) mc2 ) cn2 ) cn1 ) t2 ) kt2 ),1509.07,0
+09661,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t1 ) kt1 ) mc2 ) t2 ) mc1 ) cn1 ) mi_idx1 ) kt2 ) cn2 ),1507.80,2
+09666,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t1 ) kt1 ) mc1 ) cn1 ) t2 ) kt2 ) it2 ) mc2 ) cn2 ),1532.88,2
+09675,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) mc1 ) mi_idx2 ) cn1 ) mc2 ) cn2 ) t2 ) kt2 ) it2 ),1505.22,0
+09686,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) mi_idx1 ) t1 ) kt1 ) mc1 ) cn1 ) t2 ) mc2 ) cn2 ) kt2 ),1502.03,2
+09688,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t1 ) kt1 ) t2 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ),1517.05,0
+09690,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t1 ) kt1 ) mi_idx1 ) mc2 ) mc1 ) cn1 ) cn2 ) t2 ) kt2 ),1504.27,2
+09693,( ( ( ( ( ( ( it1 ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) kt2 ) t1 ) ) mi_idx1 ) kt1 ) mc1 ) mc2 ) cn2 ) cn1 ),1509.52,0
+09695,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t1 ) kt1 ) it2 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ),1497.74,2
+09700,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) mi_idx2 ) t2 ) mc2 ) cn2 ) t1 ) kt1 ) mc1 ) kt2 ) cn1 ),1504.31,0
+09702,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) kt1 ) mc1 ) cn1 ) t2 ) mi_idx2 ) kt2 ) mc2 ) cn2 ),1516.03,0
+09704,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t1 ) kt1 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ),1517.08,0
+09706,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) t1 ) kt1 ) mi_idx1 ),1523.12,0
+09708,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) t1 ) t2 ) kt2 ) mc1 ) cn1 ) kt1 ) mc2 ) cn2 ) it1 ),1530.57,2
+09713,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) mc1 ) t1 ) kt1 ) t2 ) kt2 ) mc2 ) cn2 ) cn1 ),1533.18,0
+09715,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it2 it1 ) ) t2 ) kt2 ) mi_idx1 ) t1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ),1484.36,0
+09723,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) t2 ) kt2 ) mc1 ) cn1 ) mi_idx2 ) mc2 ) cn2 ) it2 ),1501.94,0
+09724,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t2 ) kt2 ) it2 ) t1 ) kt1 ) mc2 ) cn2 ) mc1 ) cn1 ),1515.98,2
+09726,( ( ( ( ( it2 ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) mc2 ) mc1 ) cn1 ) ) mi_idx2 ) t2 ) kt2 ) cn2 ),1518.45,2
+09727,( ( ( ( ( ( ( ( it2 ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) ) t2 ) kt2 ) mc1 ) mc2 ) cn2 ) cn1 ) mi_idx2 ),1515.93,0
+09729,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t2 ) mc2 ) cn2 ) it2 ) mc1 ) t1 ) kt1 ) cn1 ) kt2 ),1537.10,2
+09738,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) kt2 ) mc1 ) cn1 ) t1 ) kt1 ) mc2 ) cn2 ),1513.46,2
+09739,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) kt2 ) t1 ) mc1 ) kt1 ) mc2 ) cn2 ) cn1 ),1501.90,2
+09744,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) kt1 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) mi_idx2 ),1516.09,0
+09750,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) kt1 ),1535.67,0
+09755,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) kt1 ) mc2 ) cn2 ) mc1 ) cn1 ) mi_idx2 ) t2 ) kt2 ),1525.84,0
+09763,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) kt2 ) t1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ),1528.62,0
+09773,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it2 it1 ) ) t2 ) mi_idx1 ) t1 ) kt1 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ),1489.40,0
+09780,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) kt1 ) mi_idx2 ) mc1 ) cn1 ) t2 ) kt2 ) mc2 ) cn2 ),1513.53,0
+09784,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) mc2 ) cn2 ) kt2 ) mi_idx1 ) it1 ) mc1 ) cn1 ) t1 ) kt1 ),1507.28,0
+09789,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) it2 ) t1 ) kt1 ),1536.79,0
+09790,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) mi_idx2 ) mc2 ) cn2 ) mc1 ) cn1 ) t2 ) it2 ) kt2 ),1488.39,2
+09793,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) t2 ) t1 ) kt1 ) mi_idx1 ) mc1 ) cn1 ) kt2 ) mc2 ) cn2 ),1496.50,0
+09795,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) t1 ) mc2 ) cn2 ) mc1 ) cn1 ) kt1 ) t2 ) kt2 ),1515.74,2
+09799,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t2 ) kt2 ) mi_idx2 ) mc2 ) mc1 ) cn1 ) it2 ) cn2 ) t1 ) kt1 ),1507.42,2
+09800,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) mc ) cn ) chn ) t ) mi ) it ),83302.73,0
+09803,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) chn ) mc ) cn ) t ) mi ) it ),83299.64,0
+09807,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t2 ) kt2 ) mc1 ) cn1 ) mi_idx2 ) t1 ) kt1 ) mc2 ) cn2 ),1542.31,0
+09871,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) t ) chn ) mi ) it ) mc ) cn ),112838.33,0
+10002,( ( ( k mk ) t ) mi ),18140.40,0
+10058,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) ct ) mk ) k ) t ) mi ) cn ),307.36,1
+10074,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) mc1 ) cn1 ) t2 ) kt2 ) t1 ) kt1 ) mc2 ) cn2 ),1520.67,0
+10204,( ( ( it2 ( ( ( ( k mk ) t ) kt ) mi_idx ) ) mi ) it1 ),7668.17,0
+10205,( ( ( ( ( ( ( k mk ) t ) kt ) mi_idx ) it2 ) mi ) it1 ),7664.64,0
+10206,( ( ( kt ( ( it2 ( ( k mk ) mi_idx ) ) t ) ) mi ) it1 ),7670.20,0
+10207,( ( ( ( ( it2 ( ( k mk ) mi_idx ) ) t ) kt ) mi ) it1 ),7667.76,0
+10249,( ( ( ( ( ( ( k mk ) t ) kt ) mi ) it1 ) mi_idx ) it2 ),7669.74,0
+10458,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) kt2 ) mc1 ) cn1 ) mi_idx1 ) it1 ) t1 ) mc2 ) cn2 ) kt1 ),1500.21,0
+10601,( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) ci ) chn ) k ) n ),2475.10,0
+10641,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) mc1 ) cn1 ) t2 ) kt2 ) mc2 ) cn2 ) t1 ) kt1 ),1528.64,2
+10749,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t2 ) mi_idx2 ) it2 ) t1 ) mc1 ) kt2 ) mc2 ) cn1 ) kt1 ) cn2 ),1553.63,0
+10801,( ( ( ( ( ( ( mk k ) ml ) t ) mc ) cn ) ct ) lt ),4898.93,0
+10898,( ( ( ( ( ( ( mk k ) ml ) mc ) cn ) ct ) lt ) t ),4934.41,0
+11001,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) n ) rt ) t ) mk ) k ) an ) mc ) cn ) pi ) it3 ) mi ) it ) chn ),3077.96,0
+11002,( ( ( ( ( ( ( it3 ( ( ( ( it ( ( ( ( ( k mk ) t ) mc ) cc ) mi ) ) ci ) n ) pi ) ) an ) cct1 ) chn ) cct2 ) cn ) rt ),3463.63,2
+11007,( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mc ) cn ) ci ) rt ) an ) chn ) pi ) ) n ) mk ) k ) mi ) it ),2877.61,0
+11010,( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) mi ) it ) ci ) an ) chn ) pi ) ) rt ) k ) mc ) cn ) n ),3061.62,0
+11012,( it ( ( ( ( ( ( ( ( ( rt ( ( ( ( ( ( k mk ) cc ) cct2 ) cct1 ) ci ) chn ) ) an ) pi ) n ) mc ) cn ) t ) it3 ) mi ) ),4382.03,3
+11013,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mc ) cn ) ci ) rt ) chn ) n ) mi ) it ) pi ) it3 ) mk ) k ) an ),2845.33,0
+11014,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) n ) rt ) t ) chn ) mk ) k ) an ) mc ) cn ) mi ) it ) pi ) it3 ),3077.94,0
+11017,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) chn ) t ) pi ) it3 ) rt ) an ) mk ) k ) mc ) cn ) mi ) it ),3077.96,0
+11020,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mi ) it ) ci ) an ) rt ) n ) pi ) it3 ) chn ) mc ) cn ) mk ) k ),3018.06,2
+11024,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) chn ) n ) mi ) it ) mk ) k ) an ) mc ) cn ) pi ) it3 ) rt ),2833.28,0
+11025,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) k ) ci ) rt ) n ) an ) pi ) it3 ) mc ) cn ) mi ) it ) chn ),2832.86,0
+11027,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mc ) cn ) ci ) pi ) rt ) it3 ) n ) mi ) it ) mk ) k ) chn ) an ),2835.78,0
+11028,( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) mk ) k ) mi ) it ) ci ) an ) chn ) pi ) ) cn ) t ) n ) rt ),3284.23,2
+11029,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) it ) ci ) rt ) mk ) k ) an ) n ) mc ) cn ) pi ) it3 ) chn ) t ),3565.18,0
+11032,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) it ) mk ) k ) mc ) cn ) ci ) chn ) an ) rt ) n ) pi ) t ) it3 ),3504.38,2
+11033,( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) t ) ci ) an ) rt ) chn ) mk ) k ) mc ) it ) cn ) pi ) ) n ),3717.26,0
+11034,( ( it3 ( ( ( ( ( ( ( ( ( ( it ( ( ( ( k mk ) cc ) cct2 ) mi ) ) ci ) n ) chn ) t ) cct1 ) mc ) cn ) rt ) pi ) ) an ),2833.50,2
+11039,( ( ( ( ( ( it3 ( ( cct2 ( ( ( ( ( ( ( ( k mk ) cc ) cct1 ) mc ) ci ) pi ) rt ) chn ) ) an ) ) mi ) it ) n ) cn ) t ),3422.27,2
+11040,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mc ) ci ) chn ) rt ) pi ) mk ) k ) it3 ) cn ) n ) mi ) an ) it ),3101.76,0
+11049,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) pi ) rt ) an ) it3 ) mk ) t ) chn ) mi ) it ) n ) mc ) cn ) k ),3285.60,2
+11050,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mk ) k ) mi ) it ) ci ) chn ) an ) n ) rt ) t ) pi ) mc ) cn ) it3 ),3180.83,2
+11051,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) pi ) rt ) mi ) t ) mc ) cn ) it ) n ) it3 ) mk ) k ) chn ) an ),3114.96,2
+11053,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) it ) t ) mc ) cn ) ci ) pi ) an ) n ) it3 ) mk ) k ) chn ) rt ),3062.59,2
+11054,( ( ( ( ( it ( ( ( ( ( ( ( ( ( ( ( k mk ) cc ) cct2 ) mi ) ci ) chn ) pi ) cct1 ) n ) mc ) cn ) ) rt ) an ) it3 ) t ),4086.05,2
+11056,( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) an ) t ) mi ) it ) pi ) ) mk ) k ) chn ) n ) mc ) cn ),3062.00,0
+11057,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mk ) k ) ci ) an ) rt ) n ) chn ) mi ) it ) mc ) cn ) t ) pi ) it3 ),2874.27,2
+11059,( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( k mk ) cc ) cct1 ) t ) ci ) chn ) cct2 ) mi ) n ) rt ) it ) pi ) ) an ) mc ) cn ),3547.43,2
+11060,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi ) it ) ci ) pi ) rt ) chn ) mk ) k ) mc ) cn ) n ) it3 ) an ),3020.61,0
+11061,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) t ) chn ) an ) mc ) cn ) rt ) n ) mi ) it ) pi ) it3 ) mk ) k ),2833.27,2
+11063,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) pi ) it3 ) rt ) t ) an ) mc ) mk ) k ) chn ) mi ) it ) cn ),3078.06,0
+11065,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi ) it ) ci ) rt ) chn ) n ) an ) mc ) mk ) k ) pi ) it3 ) cn ),3017.97,0
+11066,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) mi ) n ) chn ) pi ) it3 ) an ) rt ) it ) mk ) k ) mc ) cn ),2907.90,0
+11068,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) mc2 ) t2 ) kt2 ) cn2 ) t1 ) kt1 ) mc1 ) cn1 ),1519.31,0
+11069,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) rt ) n ) mi ) mk ) k ) pi ) mc ) cn ) it ) an ) chn ) it3 ),2907.96,0
+11072,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) n ) chn ) pi ) rt ) mk ) an ) k ) it3 ) mc ) cn ) mi ) it ),2909.22,0
+11077,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) an ) rt ) pi ) it3 ) t ) mc ) cn ) chn ) mi ) it ) mk ) k ),3078.03,0
+11079,( ( ( ( ( ( ( ( ( ( it3 ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) chn ) pi ) ) n ) mi ) an ) t ) mc ) cn ) mk ) k ) it ),3058.78,0
+11081,( ( ( it ( ( ( ( ( it3 ( ( ( ( ( ( ( ( k mk ) cc ) cct1 ) cct2 ) ci ) an ) rt ) pi ) ) t ) mc ) cn ) mi ) ) chn ) n ),3569.98,2
+11085,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) mc ) rt ) cn ) pi ) it3 ) chn ) mi ) it ) t ) an ) mk ) k ),3018.38,2
+11089,( ( ( ( ( ( it3 ( ( rt ( ( ( ( ( ( ( ( k mk ) cc ) cct1 ) cct2 ) t ) mi ) ci ) an ) ) pi ) ) mc ) cn ) n ) it ) chn ),4378.22,3
+11093,( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( ( k mk ) t ) cc ) cct1 ) ci ) n ) mc ) cn ) mi ) cct2 ) rt ) it ) chn ) pi ) ) an ),4351.39,0
+11094,( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( k mk ) cc ) cct2 ) cct1 ) mi ) t ) ci ) chn ) pi ) ) rt ) an ) mc ) cn ) it ) n ),3075.64,2
+11095,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) n ) chn ) an ) mc ) cn ) rt ) pi ) it3 ) mi ) it ) t ) mk ) k ),3084.52,0
+11096,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) n ) rt ) chn ) pi ) it3 ) mk ) k ) mc ) cn ) mi ) it ) an ),2833.16,0
+11098,( ( ( ( it3 ( ( ( ( ( rt ( ( ( ( ( ( ( k mk ) t ) cc ) cct1 ) mi ) ci ) an ) ) n ) mc ) cn ) pi ) ) cct2 ) chn ) it ),3230.52,2
+11100,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) n ) mc ) pi ) an ) chn ) t ) mi ) mk ) k ) it3 ) cn ) it ),3135.11,0
+11101,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) chn ) rt ) mc ) mi ) cn ) n ) mk ) an ) k ) it ) t ) pi ) it3 ),3541.05,2
+11102,( it3 ( ( ( ( ( ( ( ( it ( ( ( ( ( ( ( k mk ) mc ) cn ) cc ) t ) cct1 ) mi ) ) cct2 ) ci ) chn ) rt ) n ) an ) pi ) ),3115.12,2
+11103,( ( it3 ( ( ( ( it ( ( ( ( ( ( ( ( ( ( k mk ) t ) mc ) cn ) cc ) ci ) rt ) an ) n ) mi ) ) chn ) cct1 ) pi ) ) cct2 ),4619.03,0
+11105,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) cn ) ci ) rt ) n ) chn ) an ) mk ) k ) t ) mi ) it ) pi ) it3 ),3392.81,2
+11106,( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) ci ) an ) rt ) it ) mc ) chn ) cn ) t ) pi ) ) mk ) k ) n ),2862.37,2
+11110,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) an ) rt ) n ) mc ) t ) pi ) it3 ) mi ) it ) mk ) k ) cn ) chn ),3115.12,0
+11112,( ( ( ( ( ( ( ( ( ( it3 ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) pi ) mk ) ) n ) k ) chn ) mi ) it ) an ) t ) mc ) cn ),3178.91,0
+11113,( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) chn ) mi ) it ) mc ) cn ) rt ) mk ) k ) an ) pi ) ) n ),2875.06,0
+11117,( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( k mk ) t ) cc ) cct2 ) mi ) cct1 ) ci ) rt ) pi ) ) it ) mc ) an ) cn ) chn ) n ),4414.91,0
+11122,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) ci ) rt ) an ) mc ) cn ) it ) n ) mk ) k ) t ) pi ) it3 ) chn ),3253.18,2
+11128,( ( ( it3 ( ( ( it ( ( ( ( ( ( ( ( ( ( k mk ) t ) mc ) cc ) cct2 ) ci ) n ) rt ) chn ) mi ) ) an ) pi ) ) cn ) cct1 ),3496.37,2
+11131,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mk ) k ) ci ) n ) rt ) chn ) an ) t ) mi ) it ) pi ) it3 ) mc ) cn ),3504.22,0
+11132,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mc ) mk ) k ) mi ) it ) ci ) chn ) rt ) n ) an ) pi ) it3 ) cn ),2832.89,0
+11140,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) an ) rt ) mi ) it ) t ) mc ) cn ) pi ) chn ) it3 ) mk ) k ),3078.13,0
+11143,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) n ) rt ) an ) pi ) mi ) it ) mc ) it3 ) mk ) k ) cn ) chn ),2834.20,0
+11160,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) it ) ci ) n ) chn ) an ) t ) mc ) cn ) rt ) pi ) it3 ) mk ) k ),3056.28,2
+11161,( ( ( it3 ( ( ( it ( ( ( ( rt ( ( ( ( ( ( k mk ) cc ) cct2 ) cct1 ) ci ) chn ) ) an ) t ) mi ) ) n ) pi ) ) mc ) cn ),3073.12,2
+11163,( ( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) chn ) pi ) mc ) cn ) ) mi ) it ) t ) mk ) k ) an ) n ),3576.56,0
+11164,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) n ) mi ) t ) an ) mk ) chn ) pi ) it3 ) mc ) cn ) k ) it ),3097.65,0
+11167,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) chn ) rt ) mi ) it ) t ) mk ) k ) n ) mc ) cn ) pi ) it3 ) an ),2907.87,2
+11174,( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mk ) mi ) ci ) an ) rt ) mc ) cn ) chn ) it ) pi ) ) n ) k ),3394.22,0
+11175,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) it ) ci ) chn ) rt ) n ) pi ) mk ) k ) mc ) cn ) it3 ) t ) an ),3062.86,2
+11178,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) mk ) k ) t ) n ) mc ) cn ) an ) pi ) it3 ) mi ) it ) chn ),3069.12,0
+11180,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) pi ) rt ) it3 ) n ) mc ) cn ) an ) t ) mk ) k ) mi ) it ) chn ),3337.30,0
+11183,( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) it ) mk ) k ) t ) ci ) an ) rt ) pi ) ) chn ) n ) mc ) cn ),3496.37,2
+11184,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) an ) chn ) n ) mc ) rt ) pi ) it3 ) cn ) mk ) k ) mi ) it ),2835.85,2
+11189,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) n ) t ) mi ) it ) pi ) it3 ) mk ) k ) chn ) mc ) cn ) an ),3056.15,0
+11190,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi ) it ) mk ) k ) mc ) ci ) rt ) chn ) an ) t ) n ) cn ) pi ) it3 ),3365.75,2
+11191,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) cn ) ci ) rt ) chn ) pi ) mk ) k ) it3 ) mi ) it ) t ) an ) n ),3023.15,2
+11192,( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) rt ) mi ) mc ) cn ) chn ) pi ) ) mk ) n ) k ) it ) an ),2909.36,2
+11231,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) mi ) mc ) ct ) t ) cn ),306.55,0
+11335,( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mc ) cn ) ci ) t ) an ) mk ) chn ) rt ) pi ) ) mi ) it ) k ) n ),3779.12,0
+11432,( ( ( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) pi ) an ) mk ) ) n ) chn ) t ) mi ) it ) mc ) cn ) k ),3417.39,0
+11521,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) rt ) n ) mi ) mc ) chn ) t ) mk ) k ) an ) pi ) cn ) it ) it3 ),3086.64,0
+11602,( ( ( ( ( ( ( ( miidx it ) t ) kt ) mc ) cn ) ct ) mi ) it2 ),19283.47,0
+11718,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) mi ) ci ) n ) t ) it1 ) mk ) k ),2691.26,0
+11762,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) rt ) n ) chn ) mi ) it ) mk ) k ) an ) mc ) cn ) pi ) it3 ),2907.84,0
+11799,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) mc2 ) cn2 ) t1 ) kt1 ) mc1 ) cn1 ) t2 ) kt2 ),1522.27,2
+11803,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) cct2 ) mc ) cn ) ct ) mi ),286.90,3
+11804,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) cct2 ) t ) mc ) cn ) ct ) mi ),306.55,3
+11806,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) t ) mi ) mc ) ct ) cn ),306.55,0
+11807,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) mc ) ct ) cn ) t ) cct2 ) mi ),306.63,0
+11810,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) mc ) ct ) mk ) cn ) k ) cct2 ) t ),307.47,1
+11817,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) cct2 ) mi ) mc ) ct ) cn ),308.41,3
+11818,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) cct1 ) mc ) ct ) mi ) mk ) k ) cn ),287.67,1
+11819,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cct2 ) cn ) mk ) k ) mi ),306.96,0
+11823,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) mc ) cn ) ct ) mi ) t ),286.81,1
+11837,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mc ) cn ) mi ) cct1 ) ct ) mk ) k ),286.43,3
+11838,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) ct ) mk ) k ) cn ) t ) mi ),306.67,1
+11839,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mi ) cct2 ) t ) mk ) k ),307.90,2
+11843,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t2 ) mi_idx2 ) mc1 ) cn1 ) mc2 ) t1 ) kt1 ) cn2 ) kt2 ),1508.57,2
+11846,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mk ) k ) mc ) cn ) mi ) ct ),306.91,2
+11847,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) cct1 ) mi ) mc ) cn ) ct ),315.19,0
+11848,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) mc ) cn ) ct ) mi ) cct2 ),307.95,0
+11850,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cn ) mi ) mk ) k ) cct2 ),306.82,3
+11851,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mc ) ct ) t ) mi ) cn ) mk ) k ),306.55,2
+11852,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) mi ) mk ) k ) cct2 ) cn ),307.69,1
+11860,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mc ) cn ) ct ) mk ) k ) mi ),307.01,1
+11862,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) mi ) mc ) ct ) cn ) cct2 ),289.50,3
+11866,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) t ) cct1 ) mc ) cn ) ct ) mi ) cct2 ) mk ) k ),291.30,1
+11868,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) cct1 ) mi ) k ) mc ) cn ) ct ) t ),286.71,0
+11870,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mc ) cn ) ct ) mk ) k ) mi ),306.55,3
+11871,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mk ) k ) mc ) ct ) cn ) mi ),306.66,2
+11879,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) t ) mc ) ct ) cn ) mi ),306.55,0
+11880,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) ct ) mi ) t ) mk ) k ) cct1 ),291.12,2
+11881,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) ct ) mk ) k ) mi ) t ) cn ),313.27,0
+11884,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mi ) t ) mk ) k ) mc ) ct ) cn ),315.01,2
+11889,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) mk ) cct2 ) t ) mi ) ct ) k ) cn ),293.07,0
+11890,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) mi ) mk ) k ) cn ) cct2 ),308.49,3
+11897,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) mc ) ct ) cn ) mi ) t ),306.55,0
+11901,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) cct1 ) mc ) cn ) ct ) mi ),307.56,0
+11908,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) cct1 ) ct ) mk ) k ) t ) mi ),307.44,0
+11912,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) mc ) cn ) ct ) t ) k ) mi ) cct1 ),307.72,3
+11918,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) mi ) t ) cn ) cct2 ) mk ) k ),307.19,3
+11919,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mc ) ct ) cn ) mk ) k ) mi ),306.94,0
+11920,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) cn ) mk ) k ) mi ) ct ) t ),307.59,2
+11923,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) cct2 ) mc ) ct ) cn ) mi ),306.76,0
+11925,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) ct ) t ) cn ) mi ) cct1 ) mk ) k ),286.71,1
+11926,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mk ) k ) mc ) cn ) mi ) ct ),307.83,0
+11930,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mi ) mc ) ct ) cn ) mk ) k ),286.08,2
+11933,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) t ) cct2 ) mk ) k ) cn ) mi ),306.86,0
+11938,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) t ) mc ) ct ) cn ) mi ) mk ) k ),307.35,1
+11941,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) mc ) cn ) mi ) ct ) t ),306.66,1
+11943,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mk ) k ) t ) cct2 ) mi ),286.92,1
+11954,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) cct1 ) t ) mc ) cn ) ct ) mk ) k ),307.59,2
+11966,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) cct2 ) t ) mk ) k ) mc ) ct ) cn ),315.07,0
+11968,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) mk ) ct ) cct2 ) cn ) t ) mi ) k ),292.64,0
+11969,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) mc ) cn ) t ) ct ) mi ) cct1 ),286.71,1
+11973,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) cct1 ) mi ) mc ) ct ) cn ),306.78,0
+11976,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) cct1 ) mc ) ct ) cn ) mi ),306.74,3
+11977,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mi ) mc ) cn ) mk ) cct2 ) k ) ct ),287.70,0
+11979,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) t ) mc ) cn ) cct2 ) ct ) mk ) k ),319.66,3
+11980,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) t ) mk ) cct2 ) k ) mc ) cn ) ct ),295.71,0
+11982,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) cct2 ) mc ) cn ) ct ) mi ),307.29,3
+11992,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) mk ) cct2 ) cn ) k ) ct ) mi ) t ),295.25,0
+11999,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) mc ) cn ) t ) mi ) cct1 ) ct ),306.55,1
+12035,( ( ( it ( ( ( ( ( it3 ( ( ( ( ( ( ( ( k mk ) cc ) cct1 ) ci ) chn ) an ) cct2 ) pi ) ) t ) rt ) n ) mi ) ) mc ) cn ),2909.06,2
+12588,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) cct2 ) t ) kt ) mi ) it1 ) mc ) ct ) cn ) mk ) k ),3152.50,0
+12602,( ( ( ( ( ( ( ( at t ) mi ) it1 ) mc ) cn ) ct ) mk ) k ),336896.97,0
+12613,( ( ( ( ( ( ( ( mi it1 ) t ) mc ) cn ) ct ) mk ) k ) at ),397774.26,0
+12846,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) chn ) rt ) pi ) n ) it3 ) mc ) cn ) an ) mk ) k ) mi ) it ) t ),3197.77,0
+12905,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cct2 ) mk ) k ) cn ) mi ),307.03,0
+13002,( ( ( ( ( ( ( ( ( t mc ) cn ) ci ) an ) chn ) mi ) it ) n ) rt ),57019.47,0
+13004,( ( ( ( ( ( ( ( ( t mc ) ci ) an ) chn ) cn ) mi ) it ) n ) rt ),56634.56,0
+13005,( ( ( ( ( ( ( ( ( t mc ) ci ) rt ) an ) chn ) cn ) mi ) it ) n ),56209.70,0
+13017,( ( ( ( ( ( ( ( ( t mc ) ci ) an ) rt ) chn ) cn ) mi ) it ) n ),56283.95,0
+13018,( ( ( ( ( ( ( ( ( t mc ) cn ) ci ) rt ) an ) chn ) mi ) it ) n ),56669.35,0
+13019,( it ( ( ( it3 ( ( ( ( rt ( ( ( ( ( ( ( ( k mk ) mc ) cc ) cct2 ) cn ) t ) ci ) an ) ) n ) cct1 ) pi ) ) chn ) mi ) ),3973.52,2
+13020,( ( ( ( ( ( ( ( ( t mc ) cn ) ci ) an ) rt ) chn ) mi ) it ) n ),56839.65,0
+13054,( ( ( ( ( ( ( ( ( n an ) ci ) rt ) t ) chn ) mc ) cn ) mi ) it ),108869.85,0
+13201,( ( ( ( ( ( mc cn ) ci ) rt ) n1 ) t ) an1 ),169103.80,0
+13203,( ( ( ( ( ( cn mc ) ci ) rt ) n1 ) t ) an1 ),10955.00,0
+13204,( an1 ( ( ( ( ( ci rt ) n1 ) t ) mc ) cn ) ),588129.18,0
+13368,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) mi ) pi ) it3 ) chn ) mc ) t ) cn ) an ) it ) mk ) k ) rt ),3101.43,0
+13401,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) kt1 ) kt2 ) mi_idx2 ) mc2 ) cn2 ) mc1 ) cn1 ) t2 ),1543.80,2
+13403,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t1 ) t2 ) kt2 ) mi_idx1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ),1505.70,2
+13404,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) mc1 ) cn1 ) t1 ) kt1 ) mc2 ) t2 ) cn2 ) kt2 ),1522.96,0
+13406,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it2 it1 ) ) mi_idx1 ) t2 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ) t1 ) kt1 ),1498.48,0
+13408,( ( ( ( ( ( ( ( kt2 kt1 ) ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) t2 ) ) mc2 ) cn2 ) t1 ) mc1 ) cn1 ) it1 ),1550.37,2
+13409,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t2 ) mc1 ) kt2 ) kt1 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) it2 ) t1 ),1576.66,0
+13412,( ( ( ( ( it1 ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) mc2 ) cn2 ) mc1 ) cn1 ) ) t1 ) kt1 ) kt2 ) mi_idx1 ),1567.44,0
+13414,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) t2 ) mi_idx1 ) t1 ) mc2 ) mc1 ) cn1 ) kt2 ) cn2 ) kt1 ),1499.64,0
+13415,( ( ( ( ( ( ( ( kt1 kt2 ) ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t1 ) ) mi_idx2 ) t2 ) mc2 ) cn2 ) mc1 ) cn1 ),1538.55,0
+13417,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) t1 ) kt1 ) mc2 ) cn2 ) it1 ) t2 ) kt2 ) mc1 ) cn1 ),1535.57,0
+13422,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) mi_idx2 ) t2 ) kt2 ) kt1 ) it2 ) mc1 ) cn1 ) mc2 ) cn2 ),1522.26,2
+13423,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t2 ) mc2 ) cn2 ) t1 ) kt1 ) kt2 ) mc1 ) cn1 ),1505.37,0
+13426,( ( ( ( ( ( ( ( ( it1 ( ( it2 ( ( ml lt ) mi_idx2 ) ) t1 ) ) mi_idx1 ) t2 ) kt2 ) kt1 ) mc2 ) cn2 ) mc1 ) cn1 ),1548.86,0
+13435,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) mc2 ) cn2 ) mi_idx2 ) it2 ) kt2 ) mc1 ) cn1 ) t2 ),1535.75,0
+13437,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) mc1 ) cn1 ) t1 ) kt1 ) mi_idx1 ) t2 ) mc2 ) cn2 ) kt2 ),1502.56,2
+13438,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t1 ) mc2 ) t2 ) kt2 ) mc1 ) cn1 ) cn2 ) kt1 ),1531.25,0
+13442,( ( ( ( ( ( ( ( it2 ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) mc2 ) ) t2 ) kt2 ) t1 ) mc1 ) cn2 ) kt1 ) cn1 ),1542.87,0
+13443,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t2 ) t1 ) kt1 ) mc2 ) cn2 ) mc1 ) cn1 ) kt2 ),1504.69,0
+13450,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) mc1 ) cn1 ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) t1 ) kt1 ),1521.88,0
+13451,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) t1 ) kt1 ),1506.70,0
+13452,( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) mc1 ) cn1 ) t2 ) ( kt1 kt2 ) ) t1 ) mc2 ) cn2 ),1534.08,2
+13453,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t2 ) mc2 ) cn2 ) t1 ) kt1 ) mi_idx2 ) mc1 ) cn1 ) kt2 ),1545.76,2
+13454,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) kt2 ) t2 ) mc1 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) it2 ),1543.02,0
+13455,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) t2 ) mc2 ) cn2 ) mc1 ) cn1 ) kt2 ) kt1 ) t1 ),1542.08,0
+13456,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t1 ) kt1 ) mc2 ) cn2 ) t2 ) mi_idx2 ) mc1 ) cn1 ) kt2 ),1498.84,0
+13465,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t1 ) mc1 ) t2 ) kt2 ) cn1 ) mc2 ) kt1 ) cn2 ),1528.45,0
+13467,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) t1 ) mc1 ) cn1 ) mi_idx2 ) kt1 ) t2 ) mc2 ) cn2 ) kt2 ),1501.36,0
+13468,( ( ( ( ( ( it1 ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t1 ) t2 ) kt1 ) kt2 ) ) mc1 ) cn1 ) mi_idx1 ) mc2 ) cn2 ),1550.15,0
+13469,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) mc1 ) cn1 ) t1 ) t2 ) kt2 ) mc2 ) cn2 ) kt1 ) mi_idx2 ),1524.38,0
+13471,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) t1 ) mi_idx2 ) kt1 ) mc2 ) cn2 ) kt2 ) mc1 ) cn1 ) t2 ),1518.09,2
+13473,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t2 ) t1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ) kt2 ) mi_idx1 ),1533.98,2
+13484,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) mc2 ) cn2 ) it2 ) t1 ) kt1 ) t2 ) kt2 ) mc1 ) cn1 ),1555.85,2
+13485,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) t1 ) mi_idx1 ) mc2 ) kt1 ) kt2 ) mc1 ) cn1 ) cn2 ) t2 ),1554.91,2
+13486,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) t2 ) it1 ) t1 ) mc1 ) cn1 ) kt1 ) mc2 ) cn2 ) kt2 ),1537.79,0
+13487,( ( ( ( ( kt1 kt2 ) ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) mc1 ) cn1 ) t1 ) ) mc2 ) t2 ) cn2 ),1577.12,0
+13488,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t1 ) mi_idx1 ) t2 ) kt2 ) mc2 ) cn2 ) mc1 ) cn1 ) kt1 ),1566.90,0
+13498,( ( ( ( it2 ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) t2 ) mc2 ) kt2 ) cn2 ) ) mc1 ) cn1 ) mi_idx2 ),1515.89,0
+13500,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) t2 ) t1 ) kt1 ) it1 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ),1522.09,2
+13504,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t2 ) mc1 ) kt2 ) t1 ) cn1 ) kt1 ) mc2 ) cn2 ) mi_idx2 ),1566.30,0
+13507,( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) mi_idx2 ) t1 ) ( kt2 kt1 ) ) t2 ) mc1 ) mc2 ) cn2 ) cn1 ),1550.22,0
+13509,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) mi_idx2 ) t2 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ) kt1 ) it2 ),1545.76,0
+13515,( ( ( ( ( ( ( ( ( kt2 kt1 ) ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) ) mi_idx1 ) mc1 ) cn1 ) t1 ) it1 ) mc2 ) cn2 ),1547.00,0
+13519,( ( ( ( it2 ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t2 ) kt2 ) t1 ) mc2 ) cn2 ) mc1 ) ) kt1 ) cn1 ) mi_idx2 ),1504.80,2
+13525,( ( it1 ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t1 ) t2 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ) kt1 ) ) mi_idx1 ),1513.50,2
+13529,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t1 ) mc1 ) cn1 ) t2 ) kt2 ) kt1 ) mc2 ) cn2 ),1528.57,0
+13531,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) mc1 ) cn1 ) t1 ) mc2 ) cn2 ) kt1 ) kt2 ) t2 ),1545.97,0
+13537,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) mc1 ) cn1 ) t2 ) kt2 ) mc2 ) cn2 ) kt1 ) mi_idx2 ) t1 ),1549.16,0
+13545,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi_idx ) it2 ) t ) ci ) mk ) k ) n ) mi ) it1 ),2688.24,0
+13548,( ( ( ( ( ( ( ( kt2 kt1 ) ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) t1 ) ) mi_idx2 ) mc2 ) cn2 ) mc1 ) cn1 ) t2 ),1546.19,0
+13549,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mc1 ) cn1 ) mc2 ) cn2 ) t2 ) kt2 ) kt1 ) mi_idx2 ) t1 ),1543.76,2
+13550,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) t2 ) kt2 ) mc2 ) cn2 ) t1 ) it2 ) kt1 ) mc1 ) cn1 ),1494.16,2
+13557,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) mc1 ) t1 ) cn1 ) mc2 ) cn2 ) kt1 ) kt2 ) t2 ),1561.14,0
+13559,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) t2 ) mc1 ) mi_idx2 ) it2 ) cn1 ) kt2 ) mc2 ) cn2 ) kt1 ),1563.06,0
+13561,( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t1 ) ( kt2 kt1 ) ) mi_idx2 ) t2 ) mc1 ) cn1 ) mc2 ) cn2 ),1562.70,0
+13568,( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t1 ) ( kt2 kt1 ) ) t2 ) mc1 ) cn1 ) mc2 ) cn2 ),1532.11,2
+13570,( ( ( ( ( ( ( ( ( it1 ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) ) mi_idx1 ) t1 ) kt1 ) mc1 ) cn1 ) kt2 ) mc2 ) cn2 ),1517.06,0
+13577,( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t2 ) ( kt2 kt1 ) ) mc2 ) cn2 ) t1 ) mi_idx1 ) mc1 ) cn1 ),1564.99,0
+13589,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mc1 ) cn1 ) t1 ) kt1 ) mi_idx2 ) t2 ) mc2 ) cn2 ) kt2 ),1546.03,0
+13591,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) mc1 ) cn1 ) t1 ) t2 ) kt2 ) kt1 ) mc2 ) cn2 ),1527.36,0
+13593,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) mi_idx2 ) t2 ) kt2 ) mc2 ) kt1 ) mc1 ) cn1 ) cn2 ) it2 ),1542.99,0
+13595,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) mc1 ) cn1 ) mc2 ) mi_idx2 ) kt1 ) kt2 ) cn2 ) it2 ) t2 ),1502.22,2
+13598,( ( ( ( ( ( it2 ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mc1 ) cn1 ) mc2 ) cn2 ) ) t1 ) kt1 ) mi_idx2 ) t2 ) kt2 ),1554.23,2
+13685,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) ci ) chn ) an ) n ) rt ) mc ) cn ) t ) pi ) it3 ) mk ) k ) mi ) it ),3069.82,2
+13785,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) mi_idx2 ) t2 ) kt2 ) t1 ) mc1 ) cn1 ) mc2 ) cn2 ) kt1 ),1504.34,0
+13846,( ( ( ( ( kt2 kt1 ) ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) mc2 ) cn2 ) t2 ) ) t1 ) mc1 ) cn1 ),1567.44,0
+14001,( ( ( ( ( ( n ci ) mi_idx ) t ) mi ) it2 ) it1 ),84338.69,0
+14002,( ( ( ( ( ( n ci ) mi_idx ) it2 ) t ) mi ) it1 ),85568.78,0
+14006,( ( ( ( ( ( mi_idx it2 ) ci ) n ) mi ) it1 ) t ),290308.65,0
+14025,( ( ( ( ( ( n ci ) mi_idx ) it2 ) mi ) it1 ) t ),230019.33,0
+14095,( ( ( ( ( ( mi_idx it2 ) ci ) n ) t ) mi ) it1 ),246430.03,0
+14200,( ( ( ( ( ( mc cn ) ci ) rt ) n1 ) t ) a1 ),73991.48,0
+14207,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) mi ) mc ) ct ) cn ) t ) cct1 ),307.29,1
+14221,( ( ( ( ( ( cn mc ) ci ) rt ) n1 ) t ) a1 ),10955.00,0
+14229,( a1 ( ( ( ( ( ci rt ) n1 ) t ) mc ) cn ) ),588129.18,0
+14436,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx2 ) ( it1 it2 ) ) t2 ) mi_idx1 ) mc1 ) mc2 ) cn2 ) cn1 ) t1 ) kt1 ) kt2 ),1499.00,0
+14553,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t2 ) mi_idx2 ) t1 ) kt2 ) mc2 ) cn2 ) kt1 ) mc1 ) cn1 ),1493.62,2
+14652,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) t ) mc ) ct ) cn ) mk ) k ) mi ),290.39,1
+14873,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) ci ) an ) rt ) mc ) cn ) mk ) n ) pi ) it3 ) mi ) it ) k ) chn ),2837.19,0
+14882,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) chn ) pi ) n ) mi ) mc ) cn ) mk ) k ) it ) it3 ) t ) an ),3409.01,0
+14897,( ( ( ( ( ( ( it3 ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mi ) it ) t ) ci ) chn ) an ) pi ) ) n ) mc ) cn ) rt ) mk ) k ),3428.04,0
+15003,( ( ( ( ( ( t mc ) ci ) an ) cn ) n ) rt ),56911.89,0
+15004,( ( ( ( ( ( mc cn ) t ) ci ) an ) n ) rt ),61165.53,0
+15005,( ( ( ( ( ( t mc ) ci ) n ) an ) cn ) rt ),56756.07,0
+15138,( ( ( ( ( ( mc cn ) t ) ci ) n ) an ) rt ),61153.49,0
+15169,( ( ( ( ( ( ( ( mi it1 ) at ) t ) mc ) cn ) ct ) mk ) k ),397772.24,0
+15200,( ( ( ( ( ( k mk ) ci ) n ) mc ) cn ) t ),4634.15,0
+15204,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) mi_idx2 ) t2 ) mc2 ) cn2 ) t1 ) kt1 ) mc1 ) cn1 ) kt2 ),1528.60,0
+15400,( ( ( ( ( ( ( ( ( ( cn mc ) mi_idx ) it2 ) t ) mk ) ci ) mi ) it1 ) k ) n ),10748.88,0
+15438,( ( ( ( ( ( ( ( ( ( cn mc ) mi_idx ) it2 ) ci ) n ) mk ) k ) mi ) it1 ) t ),10760.23,0
+15546,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it2 it1 ) ) t2 ) kt2 ) mc2 ) t1 ) mi_idx2 ) kt1 ) cn2 ) mc1 ) cn1 ),1539.39,0
+15795,( ( ( ( ( it2 ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) t1 ) kt1 ) kt2 ) mc1 ) cn1 ) ) mi_idx2 ) t2 ) mc2 ) cn2 ),1540.40,0
+15800,( ( ( ( ( ( ( mi_idx it2 ) mc ) ct ) cn ) t ) mi ) it1 ),17864.60,0
+15809,( ( ( ( ( ( ( mi_idx it2 ) t ) mc ) ct ) cn ) mi ) it1 ),19683.42,0
+15822,( ( ( ( ( ( ( mi_idx it2 ) mc ) ct ) t ) cn ) mi ) it1 ),17648.95,0
+15824,( ( ( it3 ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mc ) cn ) ci ) an ) mi ) chn ) it ) mk ) k ) pi ) ) n ) rt ),3032.42,0
+16096,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) mi ) t ) mc ) ct ) cn ),306.55,0
+16200,( ( ( ( ( ( ( mk k ) ml ) t ) lt ) mc ) ct ) cn ),4919.94,0
+16201,( ( ( ( ( ( ( mk k ) ml ) t ) lt ) mc ) cn ) ct ),4932.20,0
+16329,( ( ( ( ( ( ( ( ( ( k mk ) t ) ci ) mc ) cn ) mi ) it1 ) mi_idx ) it2 ) n ),11181.20,0
+16600,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) cct2 ) t ) mk ) k ) mi ),307.00,0
+16605,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) cct1 ) mc ) ct ) cn ) mk ) k ) t ),308.35,3
+16607,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) t ) mc ) ct ) cn ) mi ),306.81,0
+16611,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cn ) cct2 ) mk ) k ) mi ),306.93,2
+16615,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) ct ) mi ) mk ) cct2 ) t ) k ),304.95,0
+16617,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) mk ) cct1 ) mi ) ct ) t ) k ),287.57,0
+16622,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) mi ) t ) cct2 ) mc ) ct ) cn ),306.57,0
+16624,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) t ) cct2 ) mi ) mk ) k ),306.57,2
+16626,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mc ) ct ) cn ) t ) mk ) k ) mi ),306.91,0
+16628,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) mc ) cn ) ct ) mi ) cct2 ),306.89,2
+16629,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) t ) ct ) cct2 ) mk ) k ) mi ),307.63,0
+16631,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mk ) k ) mi ) cct2 ) mc ) ct ) cn ),307.65,0
+16639,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) cct1 ) mk ) k ) mi ) mc ) cn ) ct ),306.68,2
+16640,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) t ) cct2 ) ct ) mk ) k ) mi ),307.04,2
+16642,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) mi ) cct1 ) t ) mc ) ct ) cn ),307.01,0
+16649,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mk ) k ) mi ) t ) mc ) cn ) ct ),307.05,3
+16652,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) mc ) ct ) cn ) t ) mk ) k ) cct1 ),320.46,0
+16653,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) mc ) ct ) mk ) k ) t ) cct1 ) cct2 ) cn ) mi ),317.28,2
+16656,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mc ) ct ) mi ) cn ) mk ) cct1 ) k ),289.16,0
+16658,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) mk ) ct ) mi ) cct1 ) t ) k ),287.57,0
+16659,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) cct2 ) t ) mk ) k ) mc ) cn ) ct ),307.22,1
+16664,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mi ) mc ) ct ) cn ) t ) mk ) cct1 ) k ),292.66,2
+16665,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) mc ) ct ) cct2 ) mk ) cct1 ) k ) mi ) cn ) t ),316.64,3
+16666,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) t2 ) kt2 ) mi_idx1 ) t1 ) mc2 ) cn2 ) kt1 ) mc1 ) cn1 ),1490.45,0
+16670,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) mc ) ct ) cn ) cct2 ) t ) mk ) k ),307.28,3
+16674,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mc ) mk ) k ) ct ) mi ) t ) cn ),307.34,3
+16675,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mi ) cct2 ) mc ) ct ) cn ) mk ) k ),307.36,2
+16676,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) t ) k ) mc ) ct ) mi ) cct2 ) cn ),308.63,1
+16679,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mk ) k ) mc ) cn ) ct ) mi ),307.70,0
+16682,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) ct ) mk ) k ) cct1 ) mi ) cn ) t ),307.19,3
+16685,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) mi ) cct2 ) mc ) cn ) ct ) t ),307.57,2
+16686,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mi ) cct2 ) mk ) k ) t ),308.04,3
+16700,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mi ) mc ) ct ) cn ) mk ) k ),314.11,0
+16709,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mi ) t ) mc ) ct ) cn ) mk ) k ),290.21,3
+16722,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) cct2 ) mk ) k ) mc ) ct ) cn ) mi ),296.58,3
+16733,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) mk ) ct ) cct2 ) t ) mi ) k ),289.11,0
+16738,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) mi ) cn ) t ) mk ) k ) cct1 ) ct ),306.67,3
+16742,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cn ) mk ) k ) cct2 ) mi ),306.99,0
+16743,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) t ) mc ) cn ) ct ) mi ) cct1 ),306.87,1
+16745,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) t ) mi ) cn ) cct2 ) mk ) k ),306.71,2
+16746,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) cct2 ) mi ) mc ) ct ) cn ),307.01,1
+16752,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) cn ) mi ) cct2 ) mk ) k ),288.95,2
+16756,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) k ) t ) mi ) mc ) cn ) ct ),307.04,3
+16757,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mi ) cct2 ) mk ) k ) mc ) ct ) cn ) t ),303.51,1
+16760,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) cct2 ) mc ) ct ) cn ) mi ) k ) t ),291.10,0
+16761,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) mi ) t ) mc ) ct ) cn ) cct2 ),306.57,0
+16767,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mc ) cn ) t ) mk ) k ) mi ) ct ),308.17,0
+16770,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) cn ) ct ) mi ) cct2 ) mk ) k ),308.71,0
+16773,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) cn ) ct ) cct2 ) mk ) k ) t ) mi ),306.79,3
+16776,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) cn ) ct ) t ) mk ) k ) cct1 ) mi ),307.07,2
+16779,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) cct1 ) mk ) k ) mi ) mc ) ct ) cn ),307.88,1
+16781,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mk ) k ) mi ) cct1 ) mc ) t ) ct ) cn ),307.30,0
+16784,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) mc ) t ) mi ) mk ) cct1 ) ct ) cn ) k ),297.65,1
+16787,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) t ) mk ) k ) mi ) mc ) cn ) cct1 ) ct ),306.67,3
+16925,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) t ) mc ) ct ) mk ) k ) cct2 ) cn ) mi ),307.17,3
+16942,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) t1 ) kt1 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) t2 ),1524.86,0
+17001,( ( it ( ( ( ( ( ( ( ( ( k mk ) t ) mc ) cn ) ci ) n ) rt ) chn ) mi ) ) an ),7362.28,0
+17092,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) rt ) mi ) n ) it ) an ) t ) mk ) k ) pi ) it3 ) mc ) cn ) chn ),2907.75,2
+17203,( ( ( ( ( ( ( ( ( ( ( it2 ( ( cc cct1 ) mi_idx ) ) mc ) cn ) cct2 ) ct ) t ) kt ) mi ) it1 ) mk ) k ),3107.32,0
+17408,( ( ( ( ( ( ( ml lt ) t ) ci ) n ) an ) pi ) it ),4326.70,0
+17430,( ( ( ( ( ( ( ml lt ) t ) ci ) an ) n ) pi ) it ),6145.66,0
+17500,( ( ( ( ( ( ( ( ( ( ( ( ml lt ) mi_idx1 ) ( it1 it2 ) ) mi_idx2 ) t2 ) kt2 ) t1 ) kt1 ) mc2 ) cn2 ) mc1 ) cn1 ),1504.46,0
+17600,( ( ( ( ( ( ( ( ( ( ( it1 ( ( lt ml ) mi_idx1 ) ) t2 ) mc1 ) kt2 ) kt1 ) cn1 ) mc2 ) cn2 ) mi_idx2 ) it2 ) t1 ),339.68,1
+17609,( ( ( ( ( ( ( ( ( ( ( it1 ( ( lt ml ) mi_idx1 ) ) mc2 ) mi_idx2 ) it2 ) t1 ) t2 ) kt1 ) kt2 ) cn2 ) mc1 ) cn1 ),342.87,2
+17648,( ( ( ( ( ( ( ( ( ( ( it2 it1 ) ( ( lt ml ) mi_idx1 ) ) mi_idx2 ) t1 ) t2 ) kt2 ) mc1 ) cn1 ) kt1 ) mc2 ) cn2 ),340.73,0
+17654,( ( ( ( ( it ( ( ( it3 ( ( ( rt ( ( ( ( ( k mk ) cc ) cct2 ) ci ) chn ) ) mi ) pi ) ) cct1 ) an ) ) n ) mc ) cn ) t ),3547.43,2
+17657,( ( ( ( ( ( ( ( ( ( ( ( ( lt ml ) mi_idx2 ) it2 ) it1 ) t2 ) mi_idx1 ) mc1 ) cn1 ) t1 ) kt1 ) kt2 ) mc2 ) cn2 ),342.23,0
+17666,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) ci ) n ) rt ) chn ) mk ) k ) pi ) it3 ) mc ) cn ) t ) an ) mi ) it ),3097.57,0
+17670,( ( ( ( ( ( ( ( ( ( ( it1 ( ( lt ml ) mi_idx1 ) ) it2 ) mi_idx2 ) t1 ) mc1 ) t2 ) kt2 ) cn1 ) mc2 ) kt1 ) cn2 ),340.78,0
+17674,( ( ( ( ( ( ( ( ( ( ( it1 it2 ) ( ( lt ml ) mi_idx1 ) ) mi_idx2 ) t2 ) kt2 ) mc1 ) cn1 ) mc2 ) cn2 ) t1 ) kt1 ),342.35,3
+17764,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( lt ml ) mi_idx1 ) ) ) t1 ) kt1 ) mc2 ) cn2 ) t2 ) mi_idx2 ) mc1 ) cn1 ) kt2 ),349.04,0
+17800,( ( ( ( ( ( ( ( k mk ) mi_idx ) it2 ) ci ) mi ) it1 ) n ) t ),10915.47,0
+17825,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) mi_idx1 ) it1 ) t2 ) kt2 ) kt1 ) mc2 ) cn2 ) t1 ) mc1 ) cn1 ),1541.92,0
+17855,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) cct2 ) mc ) ct ) mi ) mk ) k ) cn ) t ),307.35,0
+17960,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct2 ) cct1 ) mk ) mc ) ct ) mi ) cn ) t ) k ),306.89,1
+18002,( ( ( ( ( ( k mk ) mc ) cn ) ci ) n ) t ),4025.63,0
+18003,( ( ( ( ( ( k mk ) mc ) cn ) t ) ci ) n ),4025.97,0
+18200,( ( ( ( ( ( mc cn ) t ) ci ) an1 ) n1 ) rt ),59893.04,0
+18206,( ( ( ( ( ( mc cn ) t ) ci ) rt ) n1 ) an1 ),59892.40,0
+18218,( ( ( ( ( ( mc cn ) t ) ci ) rt ) an1 ) n1 ),59884.02,0
+18400,( ( ( ( ( ( mc cn ) t ) ci ) rt ) chn ) ct ),97635.19,0
+18464,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) t ) mc ) ct ) cn ) mi ) cct2 ),306.99,0
+18548,( ( ( ( ( ( ( ( ( ( it1 ( it2 ( ( ml lt ) mi_idx2 ) ) ) mi_idx1 ) t1 ) kt1 ) t2 ) mc2 ) cn2 ) kt2 ) mc1 ) cn1 ),1515.86,2
+18801,( ( ( ( ( ( mi_idx it2 ) t ) ci ) n ) mi ) it1 ),189494.96,0
+18804,( ( ( ( ( ( mi_idx it2 ) t ) mi ) it1 ) ci ) n ),75102.22,0
+18840,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) mc ) cn ) ci ) an ) chn ) mi ) it ) mk ) k ) rt ) n ) pi ) it3 ),3033.32,0
+18965,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mk ) k ) cct2 ) mc ) cn ) ct ) mi ) t ),306.57,3
+18971,( ( ( ( ( ( ( ( ( ( ( lt ml ) cc ) cct1 ) mc ) ct ) cn ) mk ) k ) cct2 ) t ) mi ),286.81,1
+19120,( ( ( ( ( ( ( mi_idx it2 ) t ) mc ) cn ) ct ) mi ) it1 ),19283.18,0
+19123,( ( ( ( ( ( ( ( ( ( ( it2 ( ( ml lt ) mi_idx2 ) ) t2 ) kt2 ) mc1 ) cn1 ) t1 ) kt1 ) mc2 ) mi_idx1 ) cn2 ) it1 ),1498.32,0
+19602,( ( ( ( ( ( ( ( ( ( it2 ( it1 ( ( ml lt ) mi_idx1 ) ) ) t2 ) kt2 ) mi_idx2 ) mc1 ) cn1 ) t1 ) mc2 ) cn2 ) kt1 ),1555.08,2
+19609,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) it2 ) t ) kt ) ci ) chn ) n ) mk ) k ),2482.19,0
+19613,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) ci ) chn ) n ) mk ) k ) mi_idx ) it2 ),2482.63,0
+19619,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) ci ) n ) chn ) mi_idx ) it2 ) mk ) k ),2488.46,0
+19648,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi_idx ) ci ) chn ) n ) kt ) mk ) k ) it2 ),2482.69,2
+19667,( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) t ) kt ) mk ) k ) mi_idx ) it2 ) ci ) chn ) n ),2482.71,2
+19698,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) kt ) k ) ci ) chn ) n ) mi_idx ) it2 ),2482.09,0
+19700,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) t ) ci ) n ) kt ) chn ) it2 ) mk ) k ),2482.46,2
+19706,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) t ) kt ) ci ) chn ) n ) mk ) k ) it2 ),2482.36,2
+19781,( ( ( ( ( ( ( ( ( ( ( it1 ( ( ml lt ) mi_idx1 ) ) mi_idx2 ) it2 ) t1 ) kt1 ) mc1 ) cn1 ) mc2 ) cn2 ) t2 ) kt2 ),1504.28,2
+19800,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mi_idx ) it2 ) mk ) k ) ci ) chn ) n ),2482.21,0
+19806,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) k ) ci ) n ) mi_idx ) it2 ) chn ),2488.62,0
+19809,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mi_idx ) it2 ) kt ) mk ) k ) ci ) chn ) n ),2482.22,0
+19828,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) kt ) mk ) mi_idx ) it2 ) ci ) n ) chn ) k ),2488.13,0
+19855,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) mk ) k ) kt ) mi_idx ) ci ) chn ) n ) it2 ),2482.21,0
+19910,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) mi_idx ) t ) ci ) chn ) n ) kt ) mk ) k ) it2 ),2484.28,0
+19936,( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( cc cct1 ) cct2 ) mc ) t ) mi ) ci ) rt ) chn ) n ) an ) it ) mk ) k ) pi ) it3 ) cn ),2839.65,2
+19939,( ( ( ( ( ( ( ( ( ( ( cc cct2 ) cct1 ) t ) ci ) chn ) n ) kt ) mi_idx ) it2 ) mk ) k ),2486.58,0
