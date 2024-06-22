@@ -6,10 +6,10 @@ from copy import deepcopy
 import numpy as np
 from models import ValueNet
 import torch
-model_path = './saved_models/supervised_best_op_0528.pt'
+model_path = './saved_models/supervised_best_op_0615_k4_1.pt'
 
 # predictionNet = ValueNet(856+3, 24)
-predictionNet = ValueNet(1616, 24)
+predictionNet = ValueNet(1616, 16)
 predictionNet.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
 predictionNet.eval()
 
@@ -20,7 +20,7 @@ def getReward(state):
         predictionRuntime = predictionNet(inputState)  # 预测完整连接顺序得到的标签
     prediction = predictionRuntime.detach().cpu().numpy()
     maxindex = np.argmax(prediction)
-    reward = (5 - maxindex/4) / 5.0
+    reward = (4 - maxindex/4) / 4.0
     return reward
 
 

@@ -137,6 +137,8 @@ def decode(currentState, tableList):
 
 
 def findBestPlan():
+    f = open("result_k4", "w+")
+
     queryNameList = os.listdir(tablenamedir)
     queryNameList.sort()
     searchFactor = 1
@@ -180,6 +182,10 @@ def findBestPlan():
         # Decode selected results
         hint = decode(currentState, tableList)
         print(queryName, ",", hint, ",%.3f" % (elapsed), ",", operator)
+        f.write(queryName+","+hint+",%.3f" % (elapsed)+","+operator)
+        f.write('\n')
+
+f.close()
 
 if __name__ == '__main__':
     findBestPlan()

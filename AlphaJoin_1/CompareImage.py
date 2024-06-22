@@ -4,10 +4,10 @@ import numpy as np
 import random
 import math
 
-f_original = open("runtime_laptop")
-f_k4 = open("runtime_k4_1")
-f_k6 = open("runtime_k6_1_new")
-f_k5 = open("runtime_k5_1_new")
+f_original = open("result_original")
+f_k4 = open("result_k4")
+f_k6 = open("result_k6")
+f_k5 = open("result_k5")
 
 line_original = f_original.readlines()
 line_k4 = f_k4.readlines()
@@ -30,15 +30,21 @@ runtime_k6 = []
 runtime_k5 = []
 flag = 0
 
+hint_length = set()
+
 for line in line_original:
     # if flag == 20:
     #     break
     # flag = flag + 1
-    queryname.append(line.split(",")[0].strip())
+    # hint_length.add(len(line.split(",")[1].strip()))
+    if len(line.split(",")[1].strip()) < 80:
+        queryname.append(line.split(",")[0].strip())
 
 
+print(len(queryname))
 
-# queryname = random.sample(queryname, 20)
+
+# queryname = random.sample(queryname, 50)
 
 
 for line in line_original:
@@ -46,7 +52,9 @@ for line in line_original:
     #     break
     # flag = flag + 1
     # queryname.append(line.split(",")[0].strip())
-    if line.split(",")[0].strip() in queryname:
+    if line.split(",")[0].strip() in queryname and len(line.split(",")[1].strip()) < 80:
+        print(line.split(",")[0].strip() + ":", end=" ")
+        print(len(line.split(",")[1].strip()))
         # runtime_original.append(float(line.split(",")[2].strip()))
         runtime_original_dict[line.split(",")[0].strip()] = float(line.split(",")[2].strip())
 
@@ -56,7 +64,7 @@ for line in line_k4:
     # if flag == 20:
     #     break
     # flag = flag + 1
-    if line.split(",")[0].strip() in queryname:
+    if line.split(",")[0].strip() in queryname and len(line.split(",")[1].strip()) < 80:
         # runtime_k4_3.append(float(line.split(",")[2].strip()))
         runtime_k4_dict[line.split(",")[0].strip()] = float(line.split(",")[2].strip())
 
@@ -64,7 +72,7 @@ for line in line_k5:
     # if flag == 20:
     #     break
     # flag = flag + 1
-    if line.split(",")[0].strip() in queryname:
+    if line.split(",")[0].strip() in queryname and len(line.split(",")[1].strip()) < 80:
         # runtime_k4_3.append(float(line.split(",")[2].strip()))
         runtime_k5_dict[line.split(",")[0].strip()] = float(line.split(",")[2].strip())
 
@@ -72,7 +80,7 @@ for line in line_k6:
     # if flag == 20:
     #     break
     # flag = flag + 1
-    if line.split(",")[0].strip() in queryname:
+    if line.split(",")[0].strip() in queryname and len(line.split(",")[1].strip()) < 80:
         # runtime_k4_3.append(float(line.split(",")[2].strip()))
         runtime_k6_dict[line.split(",")[0].strip()] = float(line.split(",")[2].strip())
 
@@ -117,12 +125,46 @@ for i in range(len(runtime_k5)):
         print(queryname[i], end=' ')
 
 print(len(queryname))
+print(sum(runtime_original))
 print("4标签:", correct1, '\t', correct1/len(queryname), '\t', sum(runtime_k4))
 print("6标签:", correct2, '\t', correct2/len(queryname), '\t', sum(runtime_k6))
 print("5标签:", correct3, '\t', correct3/len(queryname), '\t', sum(runtime_k5))
 # print(queryname)
 # print(runtime_original)
 # print(runtime_k4_3)
+
+
+correct = [correct1, correct3, correct2]
+correct_rate = [correct1/len(queryname), correct3/len(queryname), correct2/len(queryname)]
+
+x = ["k4", "k5", "k6"]
+y1 = correct
+y2 = correct_rate
+
+# 创建一个图形
+fig, ax1 = plt.subplots()
+
+# 绘制第一个数组的直方图
+color = 'tab:blue'
+bar_width = 0.2  # 设置条形图的宽度
+ax1.set_xlabel('Number of tags')
+ax1.set_ylabel('Correct', color=color)
+ax1.bar(x, correct, color=color, alpha=0.5, width=bar_width)
+ax1.tick_params(axis='y', labelcolor=color)
+
+# 创建一个共享x轴的第二个y轴
+ax2 = ax1.twinx()
+color = 'tab:orange'
+ax2.set_ylabel('Correct Rate', color=color)
+ax2.plot(x, correct_rate, color=color, marker='o')
+ax2.tick_params(axis='y', labelcolor=color)
+
+# 添加标题
+plt.title('Correct and Correct Rate')
+
+# 显示图形
+plt.show()
+
 
 
 # 参数设置
